@@ -24,7 +24,6 @@ public class CharController_rotation : MonoBehaviour {
 	
 	void Move()
 	{
-		Vector3 direction = new Vector3(Input.GetAxis("HorizontalKey"), 0, Input.GetAxis("VerticalKey"));
 		Vector3 rightMovement = right * moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
 		Vector3 upMovement = forward * moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
 		
@@ -33,5 +32,6 @@ public class CharController_rotation : MonoBehaviour {
 		transform.forward = heading;
 		transform.position += rightMovement;
 		transform.position -= upMovement;
+		transform.Translate(Vector3.up * jumpSpeed * Time.deltaTime * Input.GetAxis("JumpKey"));
 	}
 }
