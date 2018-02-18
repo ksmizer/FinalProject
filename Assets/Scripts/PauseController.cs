@@ -5,6 +5,7 @@ using UnityEngine;
 public class PauseController : MonoBehaviour {
 
 	public GameObject canvas;			// Pause canvas
+	public GameObject button;
 
 	void Update() {
 		if (Input.GetKeyDown(KeyCode.P))
