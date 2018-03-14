@@ -1,0 +1,1297 @@
+fileFormatVersion: 2
+guid: a20251d1e36c12f40b8bdd08e176157c
+timeCreated: 1520980493
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DadDisgaea_0
+    21300002: DadDisgaea_1
+    21300004: DadDisgaea_2
+    21300006: DadDisgaea_3
+    21300008: DadDisgaea_4
+    21300010: DadDisgaea_5
+    21300012: DadDisgaea_6
+    21300014: DadDisgaea_7
+    21300016: DadDisgaea_8
+    21300018: DadDisgaea_9
+    21300020: DadDisgaea_10
+    21300022: DadDisgaea_11
+    21300024: DadDisgaea_12
+    21300026: DadDisgaea_13
+    21300028: DadDisgaea_14
+    21300030: DadDisgaea_15
+    21300032: DadDisgaea_16
+    21300034: DadDisgaea_17
+    21300036: DadDisgaea_18
+    21300038: DadDisgaea_19
+    21300040: DadDisgaea_20
+    21300042: DadDisgaea_21
+    21300044: DadDisgaea_22
+    21300046: DadDisgaea_23
+    21300048: DadDisgaea_24
+    21300050: DadDisgaea_25
+    21300052: DadDisgaea_26
+    21300054: DadDisgaea_27
+    21300056: DadDisgaea_28
+    21300058: DadDisgaea_29
+    21300060: DadDisgaea_30
+    21300062: DadDisgaea_31
+    21300064: DadDisgaea_32
+    21300066: DadDisgaea_33
+    21300068: dad_idle0
+    21300070: dad_idle1
+    21300072: dad_idle2
+    21300074: dad_idle3
+    21300076: dad_idle4
+    21300078: dad_idle5
+    21300080: dad_idle6
+    21300082: dad_idle7
+    21300084: DadDisgaea_42
+    21300086: DadDisgaea_43
+    21300088: DadDisgaea_44
+    21300090: DadDisgaea_45
+    21300092: DadDisgaea_46
+    21300094: DadDisgaea_47
+    21300096: DadDisgaea_48
+    21300098: DadDisgaea_49
+    21300100: DadDisgaea_50
+    21300102: DadDisgaea_51
+    21300104: DadDisgaea_52
+    21300106: DadDisgaea_53
+    21300108: DadDisgaea_54
+    21300110: DadDisgaea_55
+    21300112: DadDisgaea_56
+    21300114: DadDisgaea_57
+    21300116: DadDisgaea_58
+    21300118: DadDisgaea_59
+    21300120: DadDisgaea_60
+    21300122: DadDisgaea_61
+    21300124: DadDisgaea_62
+    21300126: DadDisgaea_63
+    21300128: DadDisgaea_64
+    21300130: DadDisgaea_65
+    21300132: DadDisgaea_66
+    21300134: DadDisgaea_67
+    21300136: DadDisgaea_68
+    21300138: DadDisgaea_69
+    21300140: DadDisgaea_70
+    21300142: DadDisgaea_71
+    21300144: DadDisgaea_72
+    21300146: DadDisgaea_73
+    21300148: DadDisgaea_74
+    21300150: DadDisgaea_75
+    21300152: DadDisgaea_76
+    21300154: DadDisgaea_77
+    21300156: DadDisgaea_78
+    21300158: DadDisgaea_79
+    21300160: DadDisgaea_80
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: -1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DadDisgaea_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 789
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 796
+        width: 48
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 793
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 795
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_4
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 809
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_5
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 813
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_6
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 786
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_7
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 786
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 753
+        width: 45
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_9
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 753
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_10
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 748
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_11
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 755
+        width: 43
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_12
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 761
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_13
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 761
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_14
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 698
+        width: 20
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_15
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 699
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_16
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 710
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_17
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 714
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_18
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 709
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_19
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 713
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_20
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 706
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_21
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 714
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_22
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 698
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_23
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 698
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_24
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 699
+        width: 21
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_25
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 700
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 643
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_27
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 642
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_28
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 643
+        width: 19
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_29
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 643
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_30
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 643
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_31
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 645
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_32
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 644
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_33
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 643
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dad_idle0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 586
+        width: 22
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dad_idle1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 587
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dad_idle2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 586
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dad_idle3
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 587
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dad_idle4
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 587
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dad_idle5
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 586
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dad_idle6
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 586
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dad_idle7
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 585
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_42
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 522
+        width: 24
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_43
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 522
+        width: 22
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_44
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 524
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_45
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 525
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_46
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 524
+        width: 22
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_47
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 458
+        width: 20
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_48
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 459
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_49
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 458
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_50
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 458
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_51
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 459
+        width: 21
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_52
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 460
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_53
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 459
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_54
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 458
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_55
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 505
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_56
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 403
+        width: 19
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_57
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 403
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_58
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 403
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_59
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 405
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_60
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 404
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_61
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 403
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_62
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 402
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_63
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 403
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_64
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 401
+        width: 22
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 256
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_66
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 331
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_67
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 329
+        width: 20
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_68
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 330
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_69
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 328
+        width: 20
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_70
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 327
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_71
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 327
+        width: 24
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_72
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 265
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_73
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 266
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_74
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 265
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_75
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 201
+        width: 24
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_76
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 202
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_77
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 203
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_78
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 201
+        width: 22
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_79
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 200
+        width: 20
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DadDisgaea_80
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 249
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
