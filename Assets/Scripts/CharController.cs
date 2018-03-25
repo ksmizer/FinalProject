@@ -7,8 +7,8 @@ public class CharController : MonoBehaviour {
 	Animator animator;
 	
 	[SerializeField]
-	float moveSpeed = 10f;
-	float jumpSpeed = 14f;
+	float moveSpeed = 7f;
+	float jumpSpeed = 10f;
 	
 	Vector3 forward, right;
 	
@@ -17,7 +17,7 @@ public class CharController : MonoBehaviour {
 		forward.y = 0;
 		forward = Vector3.Normalize(forward);
 		right = Quaternion.Euler(new Vector3(0,90,0)) * forward;
-
+		
 		animator = GetComponent<Animator>();
 	}
 	
@@ -36,6 +36,9 @@ public class CharController : MonoBehaviour {
 	{
 		Vector3 rightMovement = right * moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
 		Vector3 upMovement = forward * moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
+		
+		rightMovement.y = 0;
+		upMovement.y = 0;
 		
 		Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
 		
