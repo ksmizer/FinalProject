@@ -1,0 +1,5152 @@
+fileFormatVersion: 2
+guid: 86679dcf6df1d4d42a0da5b9fc702ece
+timeCreated: 1522012864
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DragonDemon_0
+    21300002: DragonDemon_1
+    21300004: DragonDemon_2
+    21300006: DragonDemon_3
+    21300008: DragonDemon_4
+    21300010: DragonDemon_5
+    21300012: DragonDemon_6
+    21300014: DragonDemon_7
+    21300016: DragonDemon_8
+    21300018: DragonDemon_9
+    21300020: DragonDemon_10
+    21300022: DragonDemon_11
+    21300024: DragonDemon_12
+    21300026: DragonDemon_13
+    21300028: DragonDemon_14
+    21300030: DragonDemon_15
+    21300032: DragonDemon_16
+    21300034: DragonDemon_17
+    21300036: DragonDemon_18
+    21300038: DragonDemon_19
+    21300040: DragonDemon_20
+    21300042: DragonDemon_21
+    21300044: DragonDemon_22
+    21300046: DragonDemon_23
+    21300048: DragonDemon_24
+    21300050: DragonDemon_25
+    21300052: DragonDemon_26
+    21300054: DragonDemon_27
+    21300056: DragonDemon_28
+    21300058: DragonDemon_29
+    21300060: DragonDemon_30
+    21300062: DragonDemon_31
+    21300064: DragonDemon_32
+    21300066: DragonDemon_33
+    21300068: DragonDemon_34
+    21300070: DragonDemon_35
+    21300072: DragonDemon_36
+    21300074: DragonDemon_37
+    21300076: DragonDemon_38
+    21300078: DragonDemon_39
+    21300080: DragonDemon_40
+    21300082: DragonDemon_41
+    21300084: DragonDemon_42
+    21300086: DragonDemon_43
+    21300088: DragonDemon_44
+    21300090: DragonDemon_45
+    21300092: DragonDemon_46
+    21300094: DragonDemon_47
+    21300096: DragonDemon_48
+    21300098: DragonDemon_49
+    21300100: DragonDemon_50
+    21300102: DragonDemon_51
+    21300104: DragonDemon_52
+    21300106: DragonDemon_53
+    21300108: DragonDemon_54
+    21300110: DragonDemon_55
+    21300112: DragonDemon_56
+    21300114: DragonDemon_57
+    21300116: DragonDemon_58
+    21300118: DragonDemon_59
+    21300120: DragonDemon_60
+    21300122: DragonDemon_61
+    21300124: DragonDemon_62
+    21300126: DragonDemon_63
+    21300128: DragonDemon_64
+    21300130: DragonDemon_65
+    21300132: DragonDemon_66
+    21300134: DragonDemon_67
+    21300136: DragonDemon_68
+    21300138: DragonDemon_69
+    21300140: DragonDemon_70
+    21300142: DragonDemon_71
+    21300144: DragonDemon_72
+    21300146: DragonDemon_73
+    21300148: DragonDemon_74
+    21300150: DragonDemon_75
+    21300152: DragonDemon_76
+    21300154: DragonDemon_77
+    21300156: DragonDemon_78
+    21300158: DragonDemon_79
+    21300160: front_idle_1
+    21300162: DragonDemon_81
+    21300164: DragonDemon_82
+    21300166: DragonDemon_83
+    21300168: DragonDemon_84
+    21300170: DragonDemon_85
+    21300172: DragonDemon_86
+    21300174: DragonDemon_87
+    21300176: DragonDemon_88
+    21300178: DragonDemon_89
+    21300180: DragonDemon_90
+    21300182: DragonDemon_91
+    21300184: DragonDemon_92
+    21300186: DragonDemon_93
+    21300188: DragonDemon_94
+    21300190: DragonDemon_95
+    21300192: front_idle_2
+    21300194: front_idle_3
+    21300196: front_idle_4
+    21300198: DragonDemon_99
+    21300200: DragonDemon_100
+    21300202: DragonDemon_101
+    21300204: DragonDemon_102
+    21300206: DragonDemon_103
+    21300208: DragonDemon_104
+    21300210: DragonDemon_105
+    21300212: DragonDemon_106
+    21300214: DragonDemon_107
+    21300216: DragonDemon_108
+    21300218: DragonDemon_109
+    21300220: DragonDemon_110
+    21300222: DragonDemon_111
+    21300224: DragonDemon_112
+    21300226: DragonDemon_113
+    21300228: front_idle_5
+    21300230: front_idle_6
+    21300232: back_idle_1
+    21300234: DragonDemon_117
+    21300236: DragonDemon_118
+    21300238: DragonDemon_119
+    21300240: DragonDemon_120
+    21300242: DragonDemon_121
+    21300244: DragonDemon_122
+    21300246: DragonDemon_123
+    21300248: DragonDemon_124
+    21300250: DragonDemon_125
+    21300252: DragonDemon_126
+    21300254: DragonDemon_127
+    21300256: DragonDemon_128
+    21300258: DragonDemon_129
+    21300260: DragonDemon_130
+    21300262: DragonDemon_131
+    21300264: back_idle_2
+    21300266: back_idle_3
+    21300268: back_idle_4
+    21300270: DragonDemon_135
+    21300272: DragonDemon_136
+    21300274: DragonDemon_137
+    21300276: DragonDemon_138
+    21300278: DragonDemon_139
+    21300280: DragonDemon_140
+    21300282: DragonDemon_141
+    21300284: DragonDemon_142
+    21300286: DragonDemon_143
+    21300288: DragonDemon_144
+    21300290: DragonDemon_145
+    21300292: DragonDemon_146
+    21300294: DragonDemon_147
+    21300296: DragonDemon_148
+    21300298: DragonDemon_149
+    21300300: back_idle_5
+    21300302: back_idle_6
+    21300304: front_bite_1
+    21300306: DragonDemon_153
+    21300308: DragonDemon_154
+    21300310: DragonDemon_155
+    21300312: DragonDemon_156
+    21300314: DragonDemon_157
+    21300316: DragonDemon_158
+    21300318: DragonDemon_159
+    21300320: DragonDemon_160
+    21300322: DragonDemon_161
+    21300324: DragonDemon_162
+    21300326: DragonDemon_163
+    21300328: DragonDemon_164
+    21300330: DragonDemon_165
+    21300332: DragonDemon_166
+    21300334: DragonDemon_167
+    21300336: front_bite_2
+    21300338: front_bite_3
+    21300340: front_bite_4
+    21300342: DragonDemon_171
+    21300344: DragonDemon_172
+    21300346: DragonDemon_173
+    21300348: DragonDemon_174
+    21300350: DragonDemon_175
+    21300352: DragonDemon_176
+    21300354: DragonDemon_177
+    21300356: DragonDemon_178
+    21300358: DragonDemon_179
+    21300360: DragonDemon_180
+    21300362: DragonDemon_181
+    21300364: DragonDemon_182
+    21300366: DragonDemon_183
+    21300368: DragonDemon_184
+    21300370: DragonDemon_185
+    21300372: front_bite_5
+    21300374: front_bite_6
+    21300376: back_bite_1
+    21300378: DragonDemon_189
+    21300380: DragonDemon_190
+    21300382: DragonDemon_191
+    21300384: DragonDemon_192
+    21300386: DragonDemon_193
+    21300388: DragonDemon_194
+    21300390: DragonDemon_195
+    21300392: DragonDemon_196
+    21300394: DragonDemon_197
+    21300396: DragonDemon_198
+    21300398: DragonDemon_199
+    21300400: DragonDemon_200
+    21300402: DragonDemon_201
+    21300404: DragonDemon_202
+    21300406: DragonDemon_203
+    21300408: back_bite_2
+    21300410: back_bite_3
+    21300412: back_bite_4
+    21300414: DragonDemon_207
+    21300416: DragonDemon_208
+    21300418: DragonDemon_209
+    21300420: DragonDemon_210
+    21300422: DragonDemon_211
+    21300424: DragonDemon_212
+    21300426: DragonDemon_213
+    21300428: DragonDemon_214
+    21300430: DragonDemon_215
+    21300432: DragonDemon_216
+    21300434: DragonDemon_217
+    21300436: DragonDemon_218
+    21300438: DragonDemon_219
+    21300440: DragonDemon_220
+    21300442: DragonDemon_221
+    21300444: back_bite_5
+    21300446: back_bite_6
+    21300448: DragonDemon_224
+    21300450: DragonDemon_225
+    21300452: DragonDemon_226
+    21300454: DragonDemon_227
+    21300456: DragonDemon_228
+    21300458: DragonDemon_229
+    21300460: DragonDemon_230
+    21300462: DragonDemon_231
+    21300464: DragonDemon_232
+    21300466: DragonDemon_233
+    21300468: DragonDemon_234
+    21300470: DragonDemon_235
+    21300472: DragonDemon_236
+    21300474: DragonDemon_237
+    21300476: DragonDemon_238
+    21300478: DragonDemon_239
+    21300480: DragonDemon_240
+    21300482: DragonDemon_241
+    21300484: DragonDemon_242
+    21300486: DragonDemon_243
+    21300488: DragonDemon_244
+    21300490: DragonDemon_245
+    21300492: DragonDemon_246
+    21300494: DragonDemon_247
+    21300496: DragonDemon_248
+    21300498: DragonDemon_249
+    21300500: DragonDemon_250
+    21300502: DragonDemon_251
+    21300504: DragonDemon_252
+    21300506: DragonDemon_253
+    21300508: DragonDemon_254
+    21300510: DragonDemon_255
+    21300512: DragonDemon_256
+    21300514: DragonDemon_257
+    21300516: DragonDemon_258
+    21300518: DragonDemon_259
+    21300520: DragonDemon_260
+    21300522: DragonDemon_261
+    21300524: DragonDemon_262
+    21300526: DragonDemon_263
+    21300528: DragonDemon_264
+    21300530: DragonDemon_265
+    21300532: DragonDemon_266
+    21300534: DragonDemon_267
+    21300536: DragonDemon_268
+    21300538: DragonDemon_269
+    21300540: DragonDemon_270
+    21300542: DragonDemon_271
+    21300544: DragonDemon_272
+    21300546: DragonDemon_273
+    21300548: DragonDemon_274
+    21300550: DragonDemon_275
+    21300552: DragonDemon_276
+    21300554: DragonDemon_277
+    21300556: DragonDemon_278
+    21300558: DragonDemon_279
+    21300560: DragonDemon_280
+    21300562: DragonDemon_281
+    21300564: DragonDemon_282
+    21300566: DragonDemon_283
+    21300568: DragonDemon_284
+    21300570: DragonDemon_285
+    21300572: DragonDemon_286
+    21300574: DragonDemon_287
+    21300576: DragonDemon_288
+    21300578: DragonDemon_289
+    21300580: DragonDemon_290
+    21300582: DragonDemon_291
+    21300584: DragonDemon_292
+    21300586: DragonDemon_293
+    21300588: DragonDemon_294
+    21300590: DragonDemon_295
+    21300592: DragonDemon_296
+    21300594: DragonDemon_297
+    21300596: DragonDemon_298
+    21300598: DragonDemon_299
+    21300600: DragonDemon_300
+    21300602: DragonDemon_301
+    21300604: DragonDemon_302
+    21300606: DragonDemon_303
+    21300608: DragonDemon_304
+    21300610: DragonDemon_305
+    21300612: DragonDemon_306
+    21300614: DragonDemon_307
+    21300616: DragonDemon_308
+    21300618: DragonDemon_309
+    21300620: DragonDemon_310
+    21300622: DragonDemon_311
+    21300624: DragonDemon_312
+    21300626: DragonDemon_313
+    21300628: DragonDemon_314
+    21300630: DragonDemon_315
+    21300632: DragonDemon_316
+    21300634: DragonDemon_317
+    21300636: DragonDemon_318
+    21300638: DragonDemon_319
+    21300640: DragonDemon_320
+    21300642: DragonDemon_321
+    21300644: DragonDemon_322
+    21300646: DragonDemon_323
+    21300648: DragonDemon_324
+    21300650: DragonDemon_325
+    21300652: DragonDemon_326
+    21300654: DragonDemon_327
+    21300656: DragonDemon_328
+    21300658: DragonDemon_329
+    21300660: DragonDemon_330
+    21300662: DragonDemon_331
+    21300664: DragonDemon_332
+    21300666: DragonDemon_333
+    21300668: DragonDemon_334
+    21300670: DragonDemon_335
+    21300672: DragonDemon_336
+    21300674: DragonDemon_337
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: -1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DragonDemon_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1478
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1474
+        width: 65
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1474
+        width: 65
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_3
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1478
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_4
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1474
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_5
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1475
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_6
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1478
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_7
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 1474
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_8
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1474
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_9
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1478
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_10
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1474
+        width: 65
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_11
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1474
+        width: 65
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_12
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 1478
+        width: 65
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_13
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 1474
+        width: 65
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_14
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 1474
+        width: 65
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_15
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 1478
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_16
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 1474
+        width: 65
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_17
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 1474
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1414
+        width: 65
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_19
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1417
+        width: 63
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_20
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1416
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_21
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1415
+        width: 64
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_22
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1417
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_23
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1416
+        width: 65
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_24
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1414
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_25
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1417
+        width: 63
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_26
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1416
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_27
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1414
+        width: 65
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_28
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 1417
+        width: 63
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_29
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1416
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_30
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 1415
+        width: 64
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_31
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1417
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_32
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1416
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_33
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1414
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_34
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1417
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_35
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 1416
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_36
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1351
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_37
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1351
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_38
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1357
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_39
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1352
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_40
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1351
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_41
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1358
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_42
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1351
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_43
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 1351
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_44
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1358
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_45
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1351
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_46
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1351
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_47
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1357
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_48
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 1351
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_49
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1351
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_50
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 1357
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_51
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1351
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_52
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1351
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_53
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1357
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_54
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1316
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_55
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1316
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_56
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 1316
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_57
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1316
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_58
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 1316
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_59
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 1316
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_60
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1262
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_61
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1259
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_62
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1258
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_63
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1262
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_64
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1259
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_65
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1258
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_66
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1262
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_67
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 1259
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_68
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1258
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_69
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1262
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_70
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1259
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_71
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1258
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_72
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 1262
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_73
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 1259
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_74
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 1258
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_75
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 1262
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_76
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1259
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_77
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1258
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_78
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1199
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_79
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1198
+        width: 61
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: front_idle_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1193
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_81
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1200
+        width: 61
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_82
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1199
+        width: 61
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_83
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1194
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_84
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 1200
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_85
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1199
+        width: 61
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_86
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1194
+        width: 67
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_87
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1199
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_88
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 1198
+        width: 61
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_89
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 1193
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_90
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1199
+        width: 61
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_91
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1198
+        width: 61
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_92
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 1193
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_93
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1199
+        width: 61
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_94
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1198
+        width: 61
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_95
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1193
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: front_idle_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1133
+        width: 67
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: front_idle_3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1135
+        width: 71
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: front_idle_4
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1134
+        width: 70
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_99
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1133
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_100
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1136
+        width: 70
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_101
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1134
+        width: 70
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_102
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1133
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_103
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 1135
+        width: 70
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_104
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 1135
+        width: 70
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_105
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1133
+        width: 67
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_106
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1135
+        width: 71
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_107
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1134
+        width: 70
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_108
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 1133
+        width: 67
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_109
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1135
+        width: 70
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_110
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1134
+        width: 70
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_111
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 1133
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_112
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 1135
+        width: 70
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_113
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1134
+        width: 71
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: front_idle_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1033
+        width: 66
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: front_idle_6
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1032
+        width: 67
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: back_idle_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1040
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_117
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1033
+        width: 66
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_118
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1033
+        width: 66
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_119
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1040
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_120
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1033
+        width: 66
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_121
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1033
+        width: 67
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_122
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1040
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_123
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1033
+        width: 66
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_124
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1032
+        width: 67
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_125
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1040
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_126
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 1033
+        width: 67
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_127
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1033
+        width: 67
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_128
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1040
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_129
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 1033
+        width: 66
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_130
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1032
+        width: 67
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_131
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1040
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: back_idle_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 976
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: back_idle_3
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 974
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: back_idle_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 975
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_135
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 976
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_136
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 974
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_137
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 975
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_138
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 976
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_139
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 974
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_140
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 975
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_141
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 976
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_142
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 974
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_143
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 975
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_144
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 976
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_145
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 974
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_146
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 975
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_147
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 976
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_148
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 974
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_149
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 975
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: back_idle_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 919
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: back_idle_6
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 917
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: front_bite_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 909
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_153
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 919
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_154
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 917
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_155
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 909
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_156
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 919
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_157
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 917
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_158
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 909
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_159
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 919
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_160
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 917
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_161
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 909
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_162
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 919
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_163
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 917
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_164
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 909
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_165
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 919
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_166
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 917
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_167
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 909
+        width: 51
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: front_bite_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 813
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: front_bite_3
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 810
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: front_bite_4
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 817
+        width: 69
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_171
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 813
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_172
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 811
+        width: 58
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_173
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 818
+        width: 68
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_174
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 813
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_175
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 811
+        width: 59
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_176
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 818
+        width: 68
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_177
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 813
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_178
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 810
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_179
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 817
+        width: 69
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_180
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 813
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_181
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 810
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_182
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 817
+        width: 68
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_183
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 813
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_184
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 810
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_185
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 817
+        width: 68
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: front_bite_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 749
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: front_bite_6
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 744
+        width: 68
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: back_bite_1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 744
+        width: 53
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_189
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 749
+        width: 66
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_190
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 745
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_191
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 744
+        width: 53
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_192
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 749
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_193
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 745
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_194
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 744
+        width: 52
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_195
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 749
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_196
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 744
+        width: 68
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_197
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 744
+        width: 53
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_198
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 749
+        width: 68
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_199
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 745
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_200
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 744
+        width: 53
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_201
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 749
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_202
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 745
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_203
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 744
+        width: 52
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: back_bite_2
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 676
+        width: 55
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: back_bite_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 676
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: back_bite_4
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 681
+        width: 67
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_207
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 676
+        width: 56
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_208
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 676
+        width: 56
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_209
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 681
+        width: 67
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_210
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 676
+        width: 55
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_211
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 676
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_212
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 681
+        width: 67
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_213
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 676
+        width: 55
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_214
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 676
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_215
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 681
+        width: 67
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_216
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 676
+        width: 56
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_217
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 676
+        width: 56
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_218
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 681
+        width: 67
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_219
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 676
+        width: 55
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_220
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 676
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_221
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 681
+        width: 67
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: back_bite_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 600
+        width: 66
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: back_bite_6
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 604
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_224
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 591
+        width: 67
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_225
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 601
+        width: 66
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_226
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 604
+        width: 61
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_227
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 591
+        width: 66
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_228
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 601
+        width: 66
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_229
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 604
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_230
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 591
+        width: 66
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_231
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 600
+        width: 66
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_232
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 604
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_233
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 591
+        width: 67
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_234
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 600
+        width: 66
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_235
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 604
+        width: 61
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_236
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 591
+        width: 67
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_237
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 600
+        width: 66
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_238
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 604
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_239
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 591
+        width: 66
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_240
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 531
+        width: 67
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_241
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 532
+        width: 66
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_242
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 526
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_243
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 531
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_244
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 532
+        width: 65
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_245
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 526
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_246
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 531
+        width: 67
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_247
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 532
+        width: 66
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_248
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 527
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_249
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 531
+        width: 67
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_250
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 532
+        width: 66
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_251
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 526
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_252
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 531
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_253
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 532
+        width: 65
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_254
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 526
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_255
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 531
+        width: 67
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_256
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 532
+        width: 66
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_257
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 526
+        width: 55
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_258
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 453
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_259
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 453
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_260
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 465
+        width: 57
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_261
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 453
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_262
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 454
+        width: 50
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_263
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 465
+        width: 57
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_264
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 453
+        width: 50
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_265
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 453
+        width: 51
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_266
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 465
+        width: 57
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_267
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 453
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_268
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 453
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_269
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 465
+        width: 57
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_270
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 453
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_271
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 453
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_272
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 465
+        width: 57
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_273
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 453
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_274
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 453
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_275
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 465
+        width: 57
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_276
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 384
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_277
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 376
+        width: 54
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_278
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 367
+        width: 50
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_279
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 384
+        width: 57
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_280
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 376
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_281
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 367
+        width: 49
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_282
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 384
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_283
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 376
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_284
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 367
+        width: 50
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_285
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 384
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_286
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 376
+        width: 54
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_287
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 367
+        width: 50
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_288
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 384
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_289
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 376
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_290
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 367
+        width: 50
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_291
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 384
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_292
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 376
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_293
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 367
+        width: 50
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_294
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 299
+        width: 51
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_295
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 300
+        width: 51
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_296
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 309
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_297
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 311
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_298
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 299
+        width: 51
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_299
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 300
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_300
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 309
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_301
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 311
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_302
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 299
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_303
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 300
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_304
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 309
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_305
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 311
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_306
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 299
+        width: 51
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_307
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 300
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_308
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 309
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_309
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 311
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_310
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 299
+        width: 51
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_311
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 300
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_312
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 309
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_313
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 311
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_314
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 299
+        width: 51
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_315
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 300
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_316
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 309
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_317
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 311
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_318
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 1316
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_319
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 222
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_320
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 283
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_321
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 282
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_322
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 222
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_323
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 283
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_324
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 282
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_325
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 222
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_326
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 283
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_327
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 282
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_328
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 222
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_329
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 283
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_330
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 282
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_331
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 222
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_332
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 283
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_333
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 282
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_334
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 222
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_335
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 283
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_336
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 282
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DragonDemon_337
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3
+        width: 214
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

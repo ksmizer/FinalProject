@@ -63,9 +63,9 @@ public class AdellStats : MonoBehaviour {
 			//damageImage.color = Color.Lerp (damageImage.color, Color.cldar, flashSpeed * Time.deltaTime);
 		}
 		if (timer <= timeToShowDamage) {
-			damageText.text = "" + damageReceived;
+			//damageText.text = "" + damageReceived;
 		} else {
-			damageText.text = "";
+			//damageText.text = "";
 		}
 		damaged = false;
 	}
