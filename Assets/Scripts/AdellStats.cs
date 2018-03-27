@@ -41,7 +41,7 @@ public class AdellStats : MonoBehaviour {
 		//playerAudio = GetComponent <AudioSource> ();
 		self = GameObject.Find("Player");
 		enemy = GameObject.Find("Enemy");
-		enemyHealth = enemy.GetComponent <EnemyAttack> ();
+		//enemyHealth = enemy.GetComponent <EnemyAttack> ();
 		currentHealth = startingHealth;
 		remainingMovement = maxMovement;
 		attackDamage = (baseAttack + equipAttack) * effectiveness;
