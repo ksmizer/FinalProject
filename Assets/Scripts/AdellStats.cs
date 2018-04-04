@@ -6,51 +6,70 @@ using UnityEngine.EventSystems;
 
 public class AdellStats : MonoBehaviour {
 	
-	public int startingHealth = 40;
+	int startingHealth = 40;
 	public int currentHealth;
-	public int baseAttack = 5;
-	public int equipAttack = 0;
-	public int effectiveness = 1;
-	public int damageDealt;
-	public float maxMovement = 5f;
-	public float remainingMovement;
-	public float timeToShowDamage = 1f;
+	
+	[SerializeField]
+	public int currentLevel;
+	
+	int baseAttack = 7;
+	int baseDefense = 3;
+	int equipAttack = 2;
+	int equipDefense = 3;
+	int effectiveness = 1;
+	int damageDealt;
+	float maxMovement = 5f;
+	float timeToShowDamage = 1f;
 	//public Slider healthSlider;
 	//public Image damageImage;
 	//public AudioClip deathClip;
 	public float flashSpeed = 5f;
 	public Color flashColor = new Color(1f, 0f, 0f, 0.1f);
-	public Text damageText;
+	public Text playerDamageText;
 	
-	Animator anim;
+	//Animator anim                                                                                                                                                                                                                                                                                                                                                                                                                            ;
 	//AudioSource playerAudio;
 	//CharMovementBattle playerMovement;
 	GameObject enemy;
-	GameObject self;
-	EnemyAttack enemyHealth;
+	GameObject combat;
+	CharMovementBattle movementEnabled;
+	EnemyHealth enemyHealth;
+	TurnBasedCombat state;
 	
-	int attackDamage;
-	int damageReceived;
+	int attack;
+	int defense;
 	bool isDead;
 	bool damaged;
 	bool attacking;
 	float timer;
 	
 	void Start () {
-		anim = GetComponent <Animator> ();
+		//anim = GetComponent <Animator> ();
 		//playerAudio = GetComponent <AudioSource> ();
-		self = GameObject.Find("Player");
-		enemy = GameObject.Find("Enemy");
-		//enemyHealth = enemy.GetComponent <EnemyAttack> ();
+		enemy = GameObject.Find("Laharl");
+		enemyHealth = enemy.GetComponent <EnemyHealth> ();
 		currentHealth = startingHealth;
-		remainingMovement = maxMovement;
-		attackDamage = (baseAttack + equipAttack) * effectiveness;
+		combat = GameObject.Find("Combat");
+		state = combat.GetComponent <TurnBasedCombat> ();
+		attack =
+				Mathf.RoundToInt((Mathf.Pow((float)baseAttack,(1+0.05f*currentLevel))
+				+ equipAttack) * effectiveness);
+		defense =
+				Mathf.RoundToInt((Mathf.Pow((float)baseDefense,(1+0.05f*currentLevel))
+				+ equipDefense) * effectiveness);
 	}
 	
 	void Update () {
 		timer += Time.deltaTime;
 		if (Input.GetKeyDown("f")) {
 			attacking = true;
+		}
+		if (Input.GetKeyDown("g")) {
+			attacking = true;
+			effectiveness = 2;
+			RecalcAttack ();
+		}
+		if (Input.GetKeyDown("r")) {
 		}
 		if (damaged) {
 			
@@ -63,26 +82,37 @@ public class AdellStats : MonoBehaviour {
 			//damageImage.color = Color.Lerp (damageImage.color, Color.cldar, flashSpeed * Time.deltaTime);
 		}
 		if (timer <= timeToShowDamage) {
-			//damageText.text = "" + damageReceived;
+			playerDamageText.text = "" + attack;
 		} else {
-			//damageText.text = "";
+			playerDamageText.text = "";
 		}
 		damaged = false;
 	}
 
+	void RecalcAttack ()
+	{
+		attack =
+				Mathf.RoundToInt((Mathf.Pow((float)baseAttack,(1+0.05f*enemyHealth.currentLevel))
+				+ equipAttack) * effectiveness);
+	}
+	
 	void Attack ()
 	{
 		if (enemyHealth.currentHealth > 0) {
-			enemyHealth.TakeDamage (attackDamage);
+			enemyHealth.TakeDamage (attack);
+			if (effectiveness > 1) {
+			Debug.Log("It was Super Effective!!");
+			}
 		}
 		timer = 0f;
 		attacking = false;
+		effectiveness = 1;
 	}
 	
 	public void TakeDamage (int amount)
 	{
-		Debug.Log(amount);
-		damageReceived = amount;
+		amount -= defense;
+		Debug.Log("Player lost " + amount + " HP");
 		damaged = true;
 		currentHealth -= amount;
 		//anim.SetTrigger ("Hurt");
@@ -100,6 +130,9 @@ public class AdellStats : MonoBehaviour {
 		//playerAudio.clip = deathClip;
 		//playerAudio.Play ();
 		//playerMovement.enabled = false;
+		state.currentState = TurnBasedCombat.BattleStates.LOST;
 	}
+	
+	public float GetMaxMovement () { return maxMovement; }
 }
 

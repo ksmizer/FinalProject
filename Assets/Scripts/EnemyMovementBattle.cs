@@ -6,49 +6,56 @@ using UnityEngine.EventSystems;
 public class EnemyMovementBattle : MonoBehaviour {
 
 	//Animator animator;
-	[SerializeField]
-	float moveSpeed = 1f;
-	//float jumpSpeed = 10f;
+
 	GameObject hero;
-	GameObject self;
+	GameObject combat;
+	TurnBasedCombat state;
 	UnityEngine.AI.NavMeshAgent agent;
+	EnemyHealth stats;
 	
-	public Vector3 targetPosition;
-	public Vector3 initialPosition;
-	//public bool posSelect;
-	public float maxMove;
-	
+	Vector3 centerPos; Vector3 currentPos;
+	Vector3 distToCursor;
+	float distance; float radius;
+	bool initialized;
 	
 	void Start () {
-		hero = GameObject.Find("CharSprite");
-		targetPosition = hero.transform.position;
+		combat = GameObject.Find("Combat");
+		state = combat.GetComponent <TurnBasedCombat> ();
+		hero = GameObject.Find("Adell");
 		agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-		self = GameObject.Find("EnemySprite");
-		initialPosition = self.transform.position;
-		Init();
 	}
 	
 	void Update () {
-		if (Input.GetKeyDown("e")) {
-			Move();
-		}
+		if (state.currentState == TurnBasedCombat.BattleStates.ENEMYTURN) {
+			if (Input.GetKeyDown("e")) {
+				Move();
+			}
+			if (!initialized)
+				InitRadius ();
+			currentPos = transform.position;
+			distance = Vector3.Distance(currentPos, centerPos);
+			if (distance > radius) {
+				distToCursor = currentPos - centerPos;
+				distToCursor *= radius/distance;
+				currentPos = centerPos + distToCursor;
+				transform.position = currentPos;
+				agent.destination = currentPos;
+			}
 	}
-	
-	void Init()	{
-		maxMove = 6f;
 	}
+
 	
 	void Move()	{
-		//Debug.Log("Return pressed.");
-		//targetPosition = hero.transform.position;
-		//while (transform.position != targetPosition) {
-			//transform.position  = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-		//}
 		if (agent.destination != hero.transform.position) {
-			//while (Vector3.Distance(initialPosition, self.transform.position) <= maxMove) {
-				agent.destination = hero.transform.position;
-			//}
+			agent.destination = hero.transform.position;
 		}
+	}
+	
+	void InitRadius () {
+		initialized = true;
+		stats = GetComponent <EnemyHealth> ();
+		radius = stats.GetMaxMovement ();
+		centerPos = transform.position;
 	}
 
 }

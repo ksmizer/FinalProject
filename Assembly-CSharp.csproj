@@ -171,6 +171,8 @@
      <Compile Include="Assets\Scripts\DragPanel.cs" />
      <Compile Include="Assets\Scripts\DropMe.cs" />
      <Compile Include="Assets\Scripts\EnemyAttack.cs" />
+     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
+     <Compile Include="Assets\Scripts\EnemyManager.cs" />
      <Compile Include="Assets\Scripts\EnemyMovementBattle.cs" />
      <Compile Include="Assets\Scripts\FallingOffThreshold.cs" />
      <Compile Include="Assets\Scripts\KeyboardCameraControl.cs" />
@@ -186,8 +188,9 @@
      <Compile Include="Assets\Scripts\ScrollDetailTexture.cs" />
      <Compile Include="Assets\Scripts\SelectOnInput.cs" />
      <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
+     <Compile Include="Assets\Scripts\StageStartTimer.cs" />
      <Compile Include="Assets\Scripts\TiltWindow.cs" />
-     <Compile Include="Assets\StageStartTimer.cs" />
+     <Compile Include="Assets\Scripts\TurnBasedCombat.cs" />
      <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc" />
      <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
      <None Include="Assets\AstarPathfindingProject\Plugins\DotNetZip\DotNetZipLicense.txt" />
