@@ -14,19 +14,23 @@ public class CharMovementBattle : MonoBehaviour {
 	UnityEngine.AI.NavMeshAgent agent;
 	//AdellStats currentStats;
 	
+	bool selected;
+	
 	void Start () {
 		cursor = GameObject.Find("Cursor");
 		cursorController = cursor.GetComponent <CursorControllerBattle> ();
 		agent = GetComponent <UnityEngine.AI.NavMeshAgent> ();
+		selected = false;
 		//anim = GetComponent <Animator> ();
 		//currentStats = GetComponent <AdellStats> ();
 	}
 	
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown("enter")) {
+		if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown("enter")) && selected) {
 			Move();
+			selected = false;
 		}
-		if (Input.GetKeyDown("c")) {
+		if (Input.GetKeyDown("c") && selected) {
 			MoveBack();
 		}
 	}
@@ -44,6 +48,8 @@ public class CharMovementBattle : MonoBehaviour {
 		transform.position = cursorController.GetPrevPos ();
 		agent.destination = transform.position;
 	}
+	
+	public void SetSelected(bool test) { selected = test;}
 
 }
 

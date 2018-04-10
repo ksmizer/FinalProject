@@ -28,8 +28,9 @@ public class CharController : MonoBehaviour {
 		animator.SetInteger("Horiz", h);
 		animator.SetInteger("Vert", v);
 		
-		if (Input.anyKey)
+		if (Input.anyKey) {
 			Move();
+		}
 	}
 	
 	void Move()
