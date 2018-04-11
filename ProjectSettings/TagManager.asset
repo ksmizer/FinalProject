@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fire
+  - Ground
+  - Obstacles
+  - Ally
+  - Enemy
   layers:
   - Default
   - TransparentFX

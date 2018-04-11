@@ -4,4 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: f146577d00a9950439724cd53ff8eff9
+  - enabled: 1
+    path: Assets/Scenes/IsoMovement.unity
+    guid: 49604ac2b97479d42a78244922fd647b
+  - enabled: 1
+    path: Assets/Scenes/BattleFramework.unity
+    guid: a7381ebc76d2f3d4dbcbd34e00afdca5
+  - enabled: 1
+    path: Assets/Scenes/BattleFramework2.unity
+    guid: 56a3d8e09c337464db283e9b777b7858
+
