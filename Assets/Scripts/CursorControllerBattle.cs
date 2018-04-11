@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CursorControllerBattle : MonoBehaviour {
 
@@ -20,15 +21,25 @@ public class CursorControllerBattle : MonoBehaviour {
 	public bool posSelect = false;
 	bool initialized = false;
 	public Vector3 targetPosition = new Vector3(0,0,0);
+	public Button moveButton;
+	public Button atkButton;
+	public Button spclButton;
+	public Button defendButton;
+	public Button liftButton;
+	public Button itemButton;
+	public Canvas moveCanvas;
 	
 	//game object that is within trigger for cursor
 	GameObject charFocus;
 	GameObject charSelected;
+	Button aBtn; Button mBtn; Button sBtn; Button dBtn;
+	Button lBtn; Button iBtn;
 	bool selected = false;
 	bool focused = false;
 	bool attack = false;
 	
 	AdellStats allyStats;
+	EnemyHealth enemyStats;
 	CharMovementBattle movement;
 	
 	Vector3 centerPos; Vector3 currentPos;
@@ -58,12 +69,18 @@ public class CursorControllerBattle : MonoBehaviour {
 						charSelected = null;
 						ClearPoints ();
 					}
-					if (focused) {
+					if (focused && !attack) {
 						movement = charFocus.GetComponent <CharMovementBattle> ();
 						movement.SetSelected(true);
 						selected = true;
 						charSelected = charFocus;
 						focused = false;
+						moveCanvas.gameObject.SetActive(true);
+						CreateListeners ();
+					}
+					if (focused && attack) {
+						allyStats = charSelected.GetComponent <AdellStats> ();
+						allyStats.Attack(charFocus);
 					}
 				}
 				if (selected) {	
@@ -133,7 +150,7 @@ public class CursorControllerBattle : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter (Collider other) {
-		if (!selected) {
+		if (!selected || attack) {
 			charFocus = other.gameObject;
 			focused = true;
 		} else {
@@ -142,12 +159,16 @@ public class CursorControllerBattle : MonoBehaviour {
 	}
 	
 	void OnTriggerExit () {
-		if (!selected) {
+		if (!selected || attack) {
 			charFocus = null;
 			focused = false;
 		} else {
 			
 		}
+	}
+	
+	void TaskOnClick () {
+		
 	}
 	
 	void InitRadius () {
@@ -179,6 +200,22 @@ public class CursorControllerBattle : MonoBehaviour {
 		for (int i = 0; i < (segments+1); i++) {
 			line.SetPosition (i, new Vector3(0,0,0));
 		}
+	}
+	
+	void CreateListeners () {
+		mBtn = moveButton.GetComponent<Button> ();
+		aBtn = atkButton.GetComponent<Button> ();
+		sBtn = spclButton.GetComponent<Button> ();
+		dBtn = defendButton.GetComponent<Button> ();
+		lBtn = liftButton.GetComponent<Button> ();
+		iBtn = itemButton.GetComponent<Button> ();
+		
+		mBtn.onClick.AddListener(TaskOnClick);
+		aBtn.onClick.AddListener(TaskOnClick);
+		sBtn.onClick.AddListener(TaskOnClick);
+		dBtn.onClick.AddListener(TaskOnClick);
+		lBtn.onClick.AddListener(TaskOnClick);
+		iBtn.onClick.AddListener(TaskOnClick);
 	}
 	
 	public void SetPrevPos (Vector3 previous) {

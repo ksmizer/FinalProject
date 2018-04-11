@@ -30,7 +30,7 @@ public class AdellStats : MonoBehaviour {
 	//Animator anim                                                                                                                                                                                                                                                                                                                                                                                                                            ;
 	//AudioSource playerAudio;
 	//CharMovementBattle playerMovement;
-	GameObject enemy;
+	//GameObject enemy;
 	GameObject combat;
 	CharMovementBattle movementEnabled;
 	EnemyHealth enemyHealth;
@@ -46,8 +46,8 @@ public class AdellStats : MonoBehaviour {
 	void Start () {
 		//anim = GetComponent <Animator> ();
 		//playerAudio = GetComponent <AudioSource> ();
-		enemy = GameObject.Find("Laharl");
-		enemyHealth = enemy.GetComponent <EnemyHealth> ();
+		//enemy = GameObject.Find("Laharl");
+		//enemyHealth = enemy.GetComponent <EnemyHealth> ();
 		currentHealth = startingHealth;
 		combat = GameObject.Find("Combat");
 		state = combat.GetComponent <TurnBasedCombat> ();
@@ -74,7 +74,7 @@ public class AdellStats : MonoBehaviour {
 		if (damaged) {
 			
 		} else if (attacking) {
-			Attack ();
+			//Attack ();
 		} else if (isDead) {
 			//damageImage.color = flashColor;
 			Destroy (gameObject, 1f);
@@ -96,8 +96,10 @@ public class AdellStats : MonoBehaviour {
 				+ equipAttack) * effectiveness);
 	}
 	
-	void Attack ()
+	public void Attack (GameObject enemy)
 	{
+		RecalcAttack ();
+		enemyHealth = enemy.GetComponent <EnemyHealth> ();
 		if (enemyHealth.currentHealth > 0) {
 			enemyHealth.TakeDamage (attack);
 			if (effectiveness > 1) {
