@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/IsoMovement.unity
+- path: Assets/Scenes/BattleFramework2.unity
   isLoaded: 0
   isActive: 0
 - path: Assets/Scenes/MainMenu.unity
@@ -8,12 +8,6 @@ sceneSetups:
 - path: Assets/Scenes/BattleFramework.unity
   isLoaded: 1
   isActive: 1
-- path: Assets/Scenes/BattleFramework2.unity
-  isLoaded: 0
-  isActive: 0
-- path: Assets/Scenes/BattleFramework3.unity
-  isLoaded: 0
-  isActive: 0
-- path: Assets/Scenes/BattleFramework4.unity
+- path: Assets/Scenes/IsoMovement.unity
   isLoaded: 0
   isActive: 0

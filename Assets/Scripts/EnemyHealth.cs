@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour {
 
@@ -42,6 +43,8 @@ public class EnemyHealth : MonoBehaviour {
 			return;
 		
 		//enemyAudio.Play ();
+
+		//FloatingTextController.CreateFloatingText(amount.ToString(), transform);
 
 		amount -= (baseDefense + equipDefense);
 		Debug.Log("Player lost " + amount + " HP");

@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class AdellStats : MonoBehaviour {
-	
+	//public GameObject CBTprefab;
+
 	int startingHealth = 40;
 	public int currentHealth;
 	
@@ -44,6 +45,7 @@ public class AdellStats : MonoBehaviour {
 	float timer;
 	
 	void Start () {
+		
 		//anim = GetComponent <Animator> ();
 		//playerAudio = GetComponent <AudioSource> ();
 		enemy = GameObject.Find("Laharl");
@@ -63,6 +65,11 @@ public class AdellStats : MonoBehaviour {
 		timer += Time.deltaTime;
 		if (Input.GetKeyDown("f")) {
 			attacking = true;
+			//int amount = Random.Range (0, 100);
+			int amount = 5;
+			//string amountText = amount.ToString ();
+			//Debug.Log (amountText);
+			FloatingTextController.CreateFloatingText(amount.ToString(), transform);
 		}
 		if (Input.GetKeyDown("g")) {
 			attacking = true;
@@ -82,9 +89,9 @@ public class AdellStats : MonoBehaviour {
 			//damageImage.color = Color.Lerp (damageImage.color, Color.cldar, flashSpeed * Time.deltaTime);
 		}
 		if (timer <= timeToShowDamage) {
-			playerDamageText.text = "" + attack;
+			//playerDamageText.text = "" + attack;
 		} else {
-			playerDamageText.text = "";
+			//playerDamageText.text = "";
 		}
 		damaged = false;
 	}
@@ -111,8 +118,14 @@ public class AdellStats : MonoBehaviour {
 	
 	public void TakeDamage (int amount)
 	{
+		//InitCBT (amount.ToString());i
+		//amount =  10;
+		//FloatingTextController.CreateFloatingText(amount.ToString(), transform);
+
 		amount -= defense;
 		Debug.Log("Player lost " + amount + " HP");
+
+
 		damaged = true;
 		currentHealth -= amount;
 		//anim.SetTrigger ("Hurt");
@@ -121,6 +134,8 @@ public class AdellStats : MonoBehaviour {
 		if (currentHealth <= 0 && !isDead) {
 			Death ();
 		}
+
+
 	}
 	
 	void Death ()
@@ -134,5 +149,18 @@ public class AdellStats : MonoBehaviour {
 	}
 	
 	public float GetMaxMovement () { return maxMovement; }
+
+	/*void InitCBT(string text)
+	{
+		GameObject temp = Instantiate (CBTprefab) as GameObject;
+		RectTransform tempRect = temp.GetComponent<RectTransform> ();
+		temp.transform.SetParent (transform.FindChild ("PopUpCanvas"));
+		tempRect.transform.localPosition = CBTprefab.transform.localPosition;
+		tempRect.transform.localScale = CBTprefab.transform.localScale;
+		tempRect.transform.localRotation = CBTprefab.transform.localRotation;
+
+		temp.GetComponent<Text>().text = text;
+		Destroy (temp.gameObject, 2);
+	}*/
 }
 

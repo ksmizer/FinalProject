@@ -40,9 +40,9 @@ public class EnemyAttack : MonoBehaviour {
 		//temporary until player manager is made
 		player = GameObject.Find("Adell");
 		playerHealth = player.GetComponent <AdellStats> ();
-		self = GameObject.Find("Laharl");
+		//self = GameObject.Find("Laharl");
 		//agent = GetComponent <UnityEngine.AI.NavMeshAgent> ();
-		enemyHealth = self.GetComponent <EnemyHealth> ();
+		enemyHealth = GetComponent <EnemyHealth> ();
 		attackDamage =
 					Mathf.RoundToInt((Mathf.Pow((float)baseAttack,(1+0.05f*enemyHealth.currentLevel))
 					+ equipAttack) * effectiveness);
@@ -67,9 +67,9 @@ public class EnemyAttack : MonoBehaviour {
 				
 			}
 			if (timer <= timeToShowDamage) {
-				enemyDamageText.text = "" + attackDamage;
+				//enemyDamageText.text = "" + attackDamage;
 			} else {
-				enemyDamageText.text = "";
+				//enemyDamageText.text = "";
 			}
 			damaged = false;
 		}

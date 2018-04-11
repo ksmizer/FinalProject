@@ -29,6 +29,7 @@ public class CursorControllerBattle : MonoBehaviour {
 	bool attack = false;
 	
 	AdellStats allyStats;
+	CharMovementBattle movement;
 	
 	Vector3 centerPos; Vector3 currentPos;
 	Vector3 distToCursor; Vector3 previousPos;
@@ -53,11 +54,13 @@ public class CursorControllerBattle : MonoBehaviour {
 					//display options for focused game object
 					if (selected /* && moveOption*/) {
 						initialized = false;
+						selected = false;
 						charSelected = null;
 						ClearPoints ();
-						selected = false;
 					}
 					if (focused) {
+						movement = charFocus.GetComponent <CharMovementBattle> ();
+						movement.SetSelected(true);
 						selected = true;
 						charSelected = charFocus;
 						focused = false;
@@ -83,6 +86,8 @@ public class CursorControllerBattle : MonoBehaviour {
 						//moveOption = false;
 					}
 					if (selected) {
+						movement = charSelected.GetComponent <CharMovementBattle> ();
+						movement.SetSelected(false);
 						selected = false;
 						initialized = false;
 						charSelected = null;

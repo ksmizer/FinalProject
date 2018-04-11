@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TurnBasedCombat : MonoBehaviour {
 
@@ -25,6 +26,7 @@ public class TurnBasedCombat : MonoBehaviour {
 			currentState = BattleStates.PLAYERTURN;
 			shown = false;
 		}
+		// onClick(something) 
 		if (Input.GetKeyDown("o")) {
 			currentState = BattleStates.ENEMYTURN;
 			shown = false;
