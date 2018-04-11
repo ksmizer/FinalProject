@@ -7,7 +7,19 @@ AnimatorController:
   m_PrefabInternal: {fileID: 0}
   m_Name: PopUpText
   serializedVersion: 5
-  m_AnimatorParameters: []
+  m_AnimatorParameters:
+  - m_Name: Vert
+    m_Type: 3
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: Horiz
+    m_Type: 3
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -56,12 +68,20 @@ AnimatorStateMachine:
     m_State: {fileID: 1102017579432490980}
     m_Position: {x: 200, y: 0, z: 0}
   m_ChildStateMachines: []
-  m_AnyStateTransitions: []
+  m_AnyStateTransitions:
+  - {fileID: 1101553240489054762}
+  - {fileID: 1101399388881208032}
+  - {fileID: 1101780837343040932}
+  - {fileID: 1101043049194568434}
+  - {fileID: 1101883403971276482}
+  - {fileID: 1101495289733280522}
+  - {fileID: 1101141334100493716}
+  - {fileID: 1101928151669620092}
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_AnyStatePosition: {x: 468, y: 216, z: 0}
+  m_EntryPosition: {x: 468, y: 432, z: 0}
+  m_ExitPosition: {x: 468, y: 0, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 1102017579432490980}
