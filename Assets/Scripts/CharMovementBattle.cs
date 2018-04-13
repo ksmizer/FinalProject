@@ -47,6 +47,7 @@ public class CharMovementBattle : MonoBehaviour {
 		//Debug.Log("Return pressed.");
 		transform.position = cursorController.GetPrevPos ();
 		agent.destination = transform.position;
+		
 	}
 	
 	public void SetSelected(bool test) { selected = test;}

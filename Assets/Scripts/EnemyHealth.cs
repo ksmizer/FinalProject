@@ -1,11 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour {
 
-	public int startingHealth = 100;
+	public int startingHealth = 4;
 	public int currentHealth;
 	public int startingLevel = 1;
 	
@@ -44,10 +43,9 @@ public class EnemyHealth : MonoBehaviour {
 		
 		//enemyAudio.Play ();
 
-		//FloatingTextController.CreateFloatingText(amount.ToString(), transform);
-
 		amount -= (baseDefense + equipDefense);
-		Debug.Log("Player lost " + amount + " HP");
+		Debug.Log (currentHealth - amount);
+		Debug.Log("Enemy lost " + amount + " HP");
 		currentHealth -= amount;
 		//anim.SetTrigger ("Hurt");
 		//healthSlider.value = currentHealth;

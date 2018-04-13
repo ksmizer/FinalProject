@@ -28,9 +28,9 @@ public class EnemyMovementBattle : MonoBehaviour {
 	
 	void Update () {
 		if (state.currentState == TurnBasedCombat.BattleStates.ENEMYTURN) {
-			if (Input.GetKeyDown("e")) {
+			//if (Input.GetKeyDown("e")) {
 				Move();
-			}
+			//}
 			if (!initialized)
 				InitRadius ();
 			currentPos = transform.position;

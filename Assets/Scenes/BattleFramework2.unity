@@ -15138,9 +15138,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbcd4c6f03d30d48a08b4ea21109e03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveButton: {fileID: 0}
+  attackButton: {fileID: 0}
+  moveCanvasHere: {fileID: 0}
   moveDistance: 1
   posSelect: 0
   targetPosition: {x: 0, y: 0, z: 0}
+  moveCanvas: {fileID: 0}
   segments: 50
   c1: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &923103115

@@ -1,8 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CursorControllerBattle : MonoBehaviour {
+
+	public GameObject moveButton;
+	public GameObject attackButton;
+	public GameObject moveCanvasHere;
+	public Animation animationFight;
+	bool moveButtonFlag = false;
+	bool animationFlag = false;
 
 	//Animator animator;
 	
@@ -20,15 +28,18 @@ public class CursorControllerBattle : MonoBehaviour {
 	public bool posSelect = false;
 	bool initialized = false;
 	public Vector3 targetPosition = new Vector3(0,0,0);
+	public Canvas moveCanvas;
 	
 	//game object that is within trigger for cursor
-	GameObject charFocus;
-	GameObject charSelected;
-	bool selected = false;
-	bool focused = false;
-	bool attack = false;
+	GameObject charFocus; GameObject charSelected;
+	SphereCollider attack1; SphereCollider attack2;
+	bool menuSelected = false;	bool atkSelected = false;
+	bool moveFocus = false;		bool atkFocus = false;
+	bool attackOption = false;	bool moveOption = false;
+	bool moved = false;			bool attacked = false;
 	
 	AdellStats allyStats;
+	EnemyHealth enemyStats; 
 	CharMovementBattle movement;
 	
 	Vector3 centerPos; Vector3 currentPos;
@@ -49,25 +60,65 @@ public class CursorControllerBattle : MonoBehaviour {
 	void Update () {
 		if (state.currentState == TurnBasedCombat.BattleStates.PLAYERTURN) {
 			if (Input.anyKey) {
-				Move();
+				if (!moveCanvas.gameObject.activeSelf) {
+					Move();
+				}
+				//placeholder for attack button selection
+				Button attackbtn = attackButton.GetComponent<Button> ();
+				attackbtn.onClick.AddListener (AttackButtonChosen);
+
+				/*if (Input.GetKeyDown("n")) {
+					attackOption = true;
+					attack1 = charSelected.gameObject.GetComponentInChildren <SphereCollider> ();
+					moveCanvas.gameObject.SetActive(false);
+					movement = charSelected.GetComponent <CharMovementBattle> ();
+					movement.SetSelected(false);
+				}*/
+
+				//placeholder for move button
+				Button movebtn = moveButton.GetComponent<Button> ();
+				movebtn.onClick.AddListener (MoveButtonChosen);
+
+				//if (Input.GetKeyDown("m")) {
+				//	moveOption = true;
+				//	moveCanvas.gameObject.SetActive(false);
+				//}
+
+
 				if (Input.GetKeyDown("enter") || Input.GetKeyDown(KeyCode.Return)) {
-					//display options for focused game object
-					if (selected /* && moveOption*/) {
+					//display options for moveFocus game object
+					if (menuSelected && moveOption) {
 						initialized = false;
-						selected = false;
+						menuSelected = false;
 						charSelected = null;
+						moveOption = false;
+						moved = true;
 						ClearPoints ();
 					}
-					if (focused) {
+					if (moveFocus && !attackOption) {
 						movement = charFocus.GetComponent <CharMovementBattle> ();
 						movement.SetSelected(true);
-						selected = true;
+						menuSelected = true;
 						charSelected = charFocus;
-						focused = false;
+						moveFocus = false;
+						moveCanvas.gameObject.SetActive(true);
+					}
+					if (atkFocus && attackOption) {
+						allyStats = charSelected.GetComponent <AdellStats> ();
+						allyStats.Attack(charFocus);
+						int amount = 3;
+						FloatingTextController.CreateFloatingText (amount.ToString (), transform);
+						attackOption = false;
+						atkFocus = false;
+						charFocus = null;
+						charSelected = null;
+						menuSelected = false;
+						attacked = true;
+						ClearPoints ();
 					}
 				}
-				if (selected) {	
-					//if (moveOption) {
+				if (menuSelected) {	
+					if (moveOption) {
 						if (!initialized)
 							InitRadius ();
 						currentPos = transform.position;
@@ -78,19 +129,38 @@ public class CursorControllerBattle : MonoBehaviour {
 							currentPos = centerPos + distToCursor;
 							transform.position = currentPos;
 						}
-					//}
+					}
+					if (attackOption) {
+						if (!initialized)
+							InitRadius ();
+						currentPos = transform.position;
+						distance = Vector3.Distance(currentPos, centerPos);
+						if (distance > radius) {
+							distToCursor = currentPos - centerPos;
+							distToCursor *= radius/distance;
+							currentPos = centerPos + distToCursor;
+							transform.position = currentPos;
+						}
+					}
 				}
 				//cancel selection
 				if (Input.GetKeyDown("c")) {
-					if (selected/* && moveOption */) {
-						//moveOption = false;
-					}
-					if (selected) {
+					if (moveCanvas.gameObject.activeSelf) {
+						moveCanvas.gameObject.SetActive(false);
+					} else if (menuSelected && moved && !attackOption) {
 						movement = charSelected.GetComponent <CharMovementBattle> ();
 						movement.SetSelected(false);
-						selected = false;
+						menuSelected = false;
 						initialized = false;
-						charSelected = null;
+						transform.position = charSelected.transform.position;
+						moveCanvas.gameObject.SetActive(true);
+						ClearPoints ();
+					} else if (menuSelected && attackOption && !attacked) {
+						atkSelected = false;
+						attackOption = false;
+						initialized = false;
+						transform.position = charSelected.transform.position;
+						moveCanvas.gameObject.SetActive(true);
 						ClearPoints ();
 					}
 				}
@@ -109,10 +179,37 @@ public class CursorControllerBattle : MonoBehaviour {
 				transform.position = new Vector3 (newX, oldY, newZ);
 			}*/
 			//if cursor stopped within boundary of a trigger
-			else if (charFocus != null && !selected) {
+			else if (charFocus != null && !menuSelected) {
 				transform.position = charFocus.transform.position;
 			}
+			else if (charFocus != null && atkFocus) {
+				if (transform.position != charSelected.transform.position) {
+					transform.position = charFocus.transform.position;
+				}
+			}
+		} else if (state.currentState == TurnBasedCombat.BattleStates.ENEMYTURN) {
+			moved = false;
+			attacked = false;
 		}
+	}
+
+	void AttackButtonChosen() 
+	{
+		//animationFlag = true;
+		//if (animationFlag)
+		//	animationFight.Play(
+		attackOption = true;
+		attack1 = charSelected.gameObject.GetComponentInChildren <SphereCollider> ();
+		moveCanvas.gameObject.SetActive(false);
+		movement = charSelected.GetComponent <CharMovementBattle> ();
+		movement.SetSelected(false);
+	}
+
+	void MoveButtonChosen() 
+	{
+		//moveButtonFlag = true;
+		moveOption = true;
+		moveCanvasHere.gameObject.SetActive(false);
 	}
 	
 	void Move()
@@ -133,27 +230,36 @@ public class CursorControllerBattle : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter (Collider other) {
-		if (!selected) {
+		if (!menuSelected) {
 			charFocus = other.gameObject;
-			focused = true;
-		} else {
-			
+			moveFocus = true;
+		}
+		if (attackOption) {
+			charFocus = other.gameObject;
+			atkFocus = true;
 		}
 	}
 	
 	void OnTriggerExit () {
-		if (!selected) {
+		if (!menuSelected) {
 			charFocus = null;
-			focused = false;
-		} else {
-			
+			moveFocus = false;
+		}
+		if (attackOption) {
+			charFocus = null;
+			atkFocus = false;
 		}
 	}
 	
 	void InitRadius () {
 		initialized = true;
 		allyStats = charSelected.GetComponent <AdellStats> ();
-		radius = allyStats.GetMaxMovement ();
+		if (moveOption) {
+			radius = allyStats.GetMaxMovement ();
+		} else if (attackOption) {
+			radius = attack1.radius * 3f;
+			//Debug.Log(radius);
+		}
 		centerPos = transform.position;
 		line = charSelected.GetComponent <LineRenderer> ();
 		line.positionCount = segments+1;
@@ -180,6 +286,7 @@ public class CursorControllerBattle : MonoBehaviour {
 			line.SetPosition (i, new Vector3(0,0,0));
 		}
 	}
+	
 	
 	public void SetPrevPos (Vector3 previous) {
 		previousPos = previous;
