@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\CharController.cs" />
      <Compile Include="Assets\Scripts\CharController_rotation.cs" />
      <Compile Include="Assets\Scripts\CharMovementBattle.cs" />
+     <Compile Include="Assets\Scripts\ClampDmg.cs" />
      <Compile Include="Assets\Scripts\CubeController.cs" />
      <Compile Include="Assets\Scripts\CursorControllerBattle.cs" />
      <Compile Include="Assets\Scripts\DadTrigger.cs" />

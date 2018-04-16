@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour {
 
-	public int startingHealth = 4;
+	public Slider healthbar;
+
+	public int maxHealth = 7;
+	public int startingHealth = 7;
 	public int currentHealth;
 	public int startingLevel = 1;
 	
@@ -28,6 +32,8 @@ public class EnemyHealth : MonoBehaviour {
 		state = combat.GetComponent <TurnBasedCombat> ();
 		currentHealth = startingHealth;
 		currentLevel = startingLevel;
+
+		healthbar.value = CalculateHealth ();
 	}
 	
 	// Update is called once per frame
@@ -47,6 +53,9 @@ public class EnemyHealth : MonoBehaviour {
 		Debug.Log (currentHealth - amount);
 		Debug.Log("Enemy lost " + amount + " HP");
 		currentHealth -= amount;
+
+		healthbar.value = CalculateHealth ();
+
 		//anim.SetTrigger ("Hurt");
 		//healthSlider.value = currentHealth;
 		//playerAudio.Play ();
@@ -64,6 +73,11 @@ public class EnemyHealth : MonoBehaviour {
 		//enemyAudio.Play ();
 		state.currentState = TurnBasedCombat.BattleStates.WON;
 	}
-	
+
+	float CalculateHealth()
+	{
+		return currentHealth;
+	}
+
 	public float GetMaxMovement () { return maxMovement; }
 }

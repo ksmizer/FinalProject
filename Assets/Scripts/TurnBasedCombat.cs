@@ -10,6 +10,7 @@ public class TurnBasedCombat : MonoBehaviour {
 	public GameObject EnemyTurnCanvas;
 	public GameObject PlayerTurnCanvas;
 	public GameObject StageClearCanvas;
+	public GameObject StageLostCanvas;
 
 	bool shown = false;
 
@@ -52,6 +53,11 @@ public class TurnBasedCombat : MonoBehaviour {
 		}
 		if (Input.GetKeyDown("i")) {
 			currentState = BattleStates.LOST;
+
+			currentState = BattleStates.WON;
+			StageClearCanvas.SetActive (true);
+			StartCoroutine(Wait(4.0f, StageLostCanvas));
+			SceneManager.LoadScene (1);
 			shown = false;
 		}
 		if (Input.GetKeyDown("u")) {
