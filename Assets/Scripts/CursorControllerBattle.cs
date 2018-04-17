@@ -293,6 +293,7 @@ public class CursorControllerBattle : MonoBehaviour {
 	IEnumerator Check () {
 		yield return new WaitForSeconds(1);
 		manager.CheckEnemies();
+		manager.CheckAllies ();
 	}
 	
 	public void SetPrevPos (Vector3 previous) {

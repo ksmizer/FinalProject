@@ -20,13 +20,14 @@ public class EnemyManager : MonoBehaviour {
 	
 	public void CheckEnemies () {
 		enemies = GameObject.FindGameObjectsWithTag("Enemy");
-		if (enemies.Length < 1) {
+		if (enemies == null) {
 			state.currentState = TurnBasedCombat.BattleStates.WON;
 		}
 	}
 	
 	public void CheckAllies () {
 		heroes = GameObject.FindGameObjectsWithTag("Ally");
+		Debug.Log (heroes.Length);
 		if (heroes.Length < 1) {
 			state.currentState = TurnBasedCombat.BattleStates.LOST;
 		}

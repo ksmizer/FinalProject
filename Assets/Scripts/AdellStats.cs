@@ -77,7 +77,7 @@ public class AdellStats : MonoBehaviour {
 			RecalcAttack ();
 		}
 		if (Input.GetKeyDown("r")) {
-			anim.Play ("Front_Punch");
+			//anim.Play ("Front_Punch");
 		}
 		if (damaged) {
 			
@@ -149,7 +149,7 @@ public class AdellStats : MonoBehaviour {
 		//playerAudio.clip = deathClip;
 		//playerAudio.Play ();
 		//playerMovement.enabled = false;
-		state.currentState = TurnBasedCombat.BattleStates.LOST;
+		//state.currentState = TurnBasedCombat.BattleStates.LOST;
 	}
 	
 	public float GetMaxMovement () { return maxMovement; }

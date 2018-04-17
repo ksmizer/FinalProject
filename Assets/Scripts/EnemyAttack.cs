@@ -10,6 +10,7 @@ public class EnemyAttack : MonoBehaviour {
 	//float moveSpeed = 1f;
 	public Animator anim;
 
+	EnemyManager manager;
 
 	public int expValue = 10;
 	int baseAttack = 10;
@@ -48,6 +49,7 @@ public class EnemyAttack : MonoBehaviour {
 					+ equipAttack) * effectiveness);
 
 		anim = GetComponent<Animator> ();
+		manager = combat.GetComponent<EnemyManager> ();
 	}
 	
 	void Update () {
@@ -87,6 +89,7 @@ public class EnemyAttack : MonoBehaviour {
 		attackDamage = (baseAttack + equipAttack) * effectiveness;
 		if (playerHealth.currentHealth > 0) {
 			playerHealth.TakeDamage (attackDamage);
+			StartCoroutine (Check ());
 			if (effectiveness > 1) {
 			Debug.Log("It was Super Effective!!");
 			}
@@ -94,6 +97,12 @@ public class EnemyAttack : MonoBehaviour {
 		timer = 0f;
 		attacking = false;
 		effectiveness = 1;
+	}
+
+	IEnumerator Check () {
+		yield return new WaitForSeconds(1.5f);
+		//manager.CheckEnemies();
+		manager.CheckAllies ();
 	}
 }
 
