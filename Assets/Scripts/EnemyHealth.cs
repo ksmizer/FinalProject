@@ -17,6 +17,8 @@ public class EnemyHealth : MonoBehaviour {
 	int baseDefense = 2;
 	int equipDefense = 4;
 	float maxMovement = 5f;
+	float attackRadius1 = 1f;
+	float attackRadius2 = 2f;
 	
 	//Animator anim;
 	//AudioSource enemyAudio;
@@ -39,7 +41,7 @@ public class EnemyHealth : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (isDead) {
-			Destroy (gameObject, 1f);
+			Destroy (gameObject, 0.5f);
 		}
 	}
 	
@@ -50,12 +52,10 @@ public class EnemyHealth : MonoBehaviour {
 		//enemyAudio.Play ();
 
 		amount -= (baseDefense + equipDefense);
-		Debug.Log (currentHealth - amount);
 		Debug.Log("Enemy lost " + amount + " HP");
 		currentHealth -= amount;
 
 		healthbar.value = CalculateHealth ();
-
 		//anim.SetTrigger ("Hurt");
 		//healthSlider.value = currentHealth;
 		//playerAudio.Play ();
@@ -71,7 +71,6 @@ public class EnemyHealth : MonoBehaviour {
 		
 		//enemyAudio.clip = deathClip;
 		//enemyAudio.Play ();
-		state.currentState = TurnBasedCombat.BattleStates.WON;
 	}
 
 	float CalculateHealth()
@@ -80,4 +79,16 @@ public class EnemyHealth : MonoBehaviour {
 	}
 
 	public float GetMaxMovement () { return maxMovement; }
+	
+	public float GetAttackRadius (int attack) {
+		switch (attack) {
+			case 1:
+				return attackRadius1;
+				break;
+			case 2:
+				return attackRadius2;
+				break;
+		}
+		return 1;
+	}
 }

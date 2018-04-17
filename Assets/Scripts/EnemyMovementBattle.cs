@@ -7,53 +7,82 @@ public class EnemyMovementBattle : MonoBehaviour {
 
 	//Animator animator;
 
+	public Canvas EturnCanvas;
+	
 	GameObject[] heroes;
+	GameObject closest;
 	GameObject combat;
 	TurnBasedCombat state;
 	UnityEngine.AI.NavMeshAgent agent;
 	EnemyHealth stats;
+	EnemyAttack attack;
+	EnemyManager manager;
 	
 	Vector3 centerPos; Vector3 currentPos;
 	Vector3 distToHero;
-	float distance; float radius;
-	bool initialized;
+	float distance; float radius; float atkRadius;
+	float atkDistance; float movDistance;
+	bool initialized; bool moved;
+	bool attacked; bool inRange;
+	bool active; bool found;
 	
 	void Start () {
 		combat = GameObject.Find("Combat");
 		state = combat.GetComponent <TurnBasedCombat> ();
-		//hero = GameObject.Find("Adell");
+		manager = combat.GetComponent <EnemyManager> ();
 		agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 		stats = GetComponent <EnemyHealth> ();
+		attack = GetComponent <EnemyAttack> ();
+		moved = false;
+		radius = stats.GetMaxMovement();
 	}
 	
 	void Update () {
 		if (state.currentState == TurnBasedCombat.BattleStates.ENEMYTURN) {
-			//if (Input.GetKeyDown("e")) {
+			if (!moved && !EturnCanvas.gameObject.activeSelf) {
+				inRange = false;
 				Move();
-			//}
-			if (!initialized)
-				InitRadius ();
-			currentPos = transform.position;
-			distance = Vector3.Distance(currentPos, centerPos);
-			if (distance > radius) {
-				distToHero = currentPos - centerPos;
-				distToHero *= radius/distance;
-				currentPos = centerPos + distToHero;
-				transform.position = currentPos;
-				agent.destination = currentPos;
+				moved = true;
+			}
+			if (moved && closest != null) {
+				currentPos = transform.position;
+				movDistance = Vector3.Distance(currentPos, centerPos);
+				if (movDistance > radius || inRange) {
+					agent.destination = transform.position;
+				}
+			}
+			if (closest != null) {
+				atkRadius = stats.GetAttackRadius(1);
+				Vector3 diff = closest.transform.position - transform.position;
+				atkDistance = diff.sqrMagnitude;
+				if (atkDistance <= atkRadius * 3f) {
+					inRange = true;
+				} else {
+					inRange = false;
+				}
+			}
+			if (!attacked && closest != null && inRange && !EturnCanvas.gameObject.activeSelf) {
+				attack.Attack(closest);
+				attacked = true;
+				StartCoroutine(Check());
+				//manager.CheckAllies();
 			}
 		} else {
-			initialized = false;
+			moved = false;
+			attacked = false;
 		}
 	}
-
+	
+	IEnumerator Check() {
+		yield return new WaitForSeconds(1);
+		manager.CheckAllies();
+	}
 	
 	void Move()	{
-		GameObject closest = null;
+		closest = null;
+		centerPos = transform.position;
 		float distance = Mathf.Infinity;
-		if (heroes == null) {
-			heroes = GameObject.FindGameObjectsWithTag("Ally");
-		}
+		heroes = GameObject.FindGameObjectsWithTag("Ally");
 		foreach (GameObject hero in heroes) {
 			Vector3 diff = hero.transform.position - transform.position;
 			float curDistance = diff.sqrMagnitude;
@@ -66,12 +95,5 @@ public class EnemyMovementBattle : MonoBehaviour {
 			agent.destination = closest.transform.position;
 		}
 	}
-	
-	void InitRadius () {
-		initialized = true;
-		radius = stats.GetMaxMovement ();
-		centerPos = transform.position;
-	}
-
 }
 

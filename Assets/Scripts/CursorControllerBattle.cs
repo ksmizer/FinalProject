@@ -5,14 +5,13 @@ using UnityEngine.UI;
 
 public class CursorControllerBattle : MonoBehaviour {
 
+	//Animator animator;
 	public GameObject moveButton;
 	public GameObject attackButton;
 	public GameObject moveCanvasHere;
 	public Animation animationFight;
 	bool moveButtonFlag = false;
 	bool animationFlag = false;
-
-	//Animator animator;
 	
 	[SerializeField]
 	float moveDistance = 1f;
@@ -24,7 +23,8 @@ public class CursorControllerBattle : MonoBehaviour {
 	
 	GameObject combat;
 	TurnBasedCombat state;
-	
+	EnemyManager manager;
+
 	public bool posSelect = false;
 	bool initialized = false;
 	public Vector3 targetPosition = new Vector3(0,0,0);
@@ -55,6 +55,7 @@ public class CursorControllerBattle : MonoBehaviour {
 	void Start () {
 		combat = GameObject.Find("Combat");
 		state = combat.GetComponent <TurnBasedCombat> ();
+		manager = combat.GetComponent<EnemyManager> ();
 	}
 	
 	void Update () {
@@ -66,7 +67,6 @@ public class CursorControllerBattle : MonoBehaviour {
 				//placeholder for attack button selection
 				Button attackbtn = attackButton.GetComponent<Button> ();
 				attackbtn.onClick.AddListener (AttackButtonChosen);
-
 				/*if (Input.GetKeyDown("n")) {
 					attackOption = true;
 					attack1 = charSelected.gameObject.GetComponentInChildren <SphereCollider> ();
@@ -74,19 +74,15 @@ public class CursorControllerBattle : MonoBehaviour {
 					movement = charSelected.GetComponent <CharMovementBattle> ();
 					movement.SetSelected(false);
 				}*/
-
 				//placeholder for move button
 				Button movebtn = moveButton.GetComponent<Button> ();
 				movebtn.onClick.AddListener (MoveButtonChosen);
-
-				//if (Input.GetKeyDown("m")) {
-				//	moveOption = true;
-				//	moveCanvas.gameObject.SetActive(false);
-				//}
-
-
+				/*if (Input.GetKeyDown("m")) {
+					moveOption = true;
+					moveCanvas.gameObject.SetActive(false);
+				}*/
 				if (Input.GetKeyDown("enter") || Input.GetKeyDown(KeyCode.Return)) {
-					//display options for moveFocus game object
+					//move character and clear memory
 					if (menuSelected && moveOption) {
 						initialized = false;
 						menuSelected = false;
@@ -95,6 +91,7 @@ public class CursorControllerBattle : MonoBehaviour {
 						moved = true;
 						ClearPoints ();
 					}
+					//select character that is focused on & bring up menu
 					if (moveFocus && !attackOption) {
 						movement = charFocus.GetComponent <CharMovementBattle> ();
 						movement.SetSelected(true);
@@ -103,6 +100,7 @@ public class CursorControllerBattle : MonoBehaviour {
 						moveFocus = false;
 						moveCanvas.gameObject.SetActive(true);
 					}
+					//attack character selected
 					if (atkFocus && attackOption) {
 						allyStats = charSelected.GetComponent <AdellStats> ();
 						allyStats.Attack(charFocus);
@@ -115,8 +113,11 @@ public class CursorControllerBattle : MonoBehaviour {
 						menuSelected = false;
 						attacked = true;
 						ClearPoints ();
+						StartCoroutine(Check());
 					}
 				}
+				//used for initializing line renderer to show radius around
+				//character for movement & attack
 				if (menuSelected) {	
 					if (moveOption) {
 						if (!initialized)
@@ -182,11 +183,13 @@ public class CursorControllerBattle : MonoBehaviour {
 			else if (charFocus != null && !menuSelected) {
 				transform.position = charFocus.transform.position;
 			}
+			//if cursor stopped within boundary of a trigger that isn't self
 			else if (charFocus != null && atkFocus) {
 				if (transform.position != charSelected.transform.position) {
 					transform.position = charFocus.transform.position;
 				}
 			}
+		//reset character movement and attack options
 		} else if (state.currentState == TurnBasedCombat.BattleStates.ENEMYTURN) {
 			moved = false;
 			attacked = false;
@@ -211,7 +214,7 @@ public class CursorControllerBattle : MonoBehaviour {
 		moveOption = true;
 		moveCanvasHere.gameObject.SetActive(false);
 	}
-	
+
 	void Move()
 	{
 		Vector3 rightMovement = Vector3.right * moveDistance * Time.deltaTime * 15f * Input.GetAxis("HorizontalKey");
@@ -287,6 +290,10 @@ public class CursorControllerBattle : MonoBehaviour {
 		}
 	}
 	
+	IEnumerator Check () {
+		yield return new WaitForSeconds(1);
+		manager.CheckEnemies();
+	}
 	
 	public void SetPrevPos (Vector3 previous) {
 		previousPos = previous;

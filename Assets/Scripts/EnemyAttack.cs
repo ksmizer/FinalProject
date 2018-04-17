@@ -19,8 +19,6 @@ public class EnemyAttack : MonoBehaviour {
 	public Text enemyDamageText;
 	
 	Animator anim;
-	GameObject player;
-	GameObject self;
 	AdellStats playerHealth;
 	EnemyHealth enemyHealth;
 	EnemyMovementBattle movementEnabled;
@@ -38,8 +36,8 @@ public class EnemyAttack : MonoBehaviour {
 		combat = GameObject.Find("Combat");
 		state = combat.GetComponent <TurnBasedCombat> ();
 		//temporary until player manager is made
-		player = GameObject.Find("Adell");
-		playerHealth = player.GetComponent <AdellStats> ();
+		//player = GameObject.Find("Adell");
+		//playerHealth = player.GetComponent <AdellStats> ();
 		//self = GameObject.Find("Laharl");
 		//agent = GetComponent <UnityEngine.AI.NavMeshAgent> ();
 		enemyHealth = GetComponent <EnemyHealth> ();
@@ -62,7 +60,7 @@ public class EnemyAttack : MonoBehaviour {
 				remainingMovement = maxMovement;
 			}
 			if (attacking) {
-				Attack ();
+				//Attack ();
 			} else {
 				
 			}
@@ -75,8 +73,9 @@ public class EnemyAttack : MonoBehaviour {
 		}
 	}
 	
-	void Attack ()
+	public void Attack (GameObject player)
 	{
+		playerHealth = player.GetComponent <AdellStats> ();
 		attackDamage = (baseAttack + equipAttack) * effectiveness;
 		if (playerHealth.currentHealth > 0) {
 			playerHealth.TakeDamage (attackDamage);

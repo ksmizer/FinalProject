@@ -63,9 +63,6 @@ public class AdellStats : MonoBehaviour {
 		timer += Time.deltaTime;
 		if (Input.GetKeyDown("f")) {
 			attacking = true;
-			int amount = 3;
-			Debug.Log (enemyHealth);
-			FloatingTextController.CreateFloatingText (amount.ToString (), transform);
 		}
 		if (Input.GetKeyDown("g")) {
 			attacking = true;
@@ -102,10 +99,8 @@ public class AdellStats : MonoBehaviour {
 	public void Attack (GameObject enemy)
 	{
 		//RecalcAttack ();
-
 		enemyHealth = enemy.GetComponent <EnemyHealth> ();
 		if (enemyHealth.currentHealth > 0) {
-			Debug.Log (enemyHealth);
 			enemyHealth.TakeDamage (attack);
 			if (effectiveness > 1) {
 			Debug.Log("It was Super Effective!!");
@@ -120,7 +115,6 @@ public class AdellStats : MonoBehaviour {
 	{
 		amount -= defense;
 		Debug.Log("Player lost " + amount + " HP");
-		//Debug.Log (enemyHealth);
 		damaged = true;
 		currentHealth -= amount;
 		//anim.SetTrigger ("Hurt");

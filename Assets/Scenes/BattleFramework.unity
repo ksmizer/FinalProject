@@ -1469,9 +1469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 2.5
-  time2: 1
   StageStartCanvas: {fileID: 131425323}
-  PlayerStartCanvas: {fileID: 0}
 --- !u!114 &131425325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2120,9 +2118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 2
-  time2: 1
   StageStartCanvas: {fileID: 266364447}
-  PlayerStartCanvas: {fileID: 1387645850}
 --- !u!114 &266364449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6418,9 +6414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 2.5
-  time2: 1
   StageStartCanvas: {fileID: 1340057917}
-  PlayerStartCanvas: {fileID: 0}
 --- !u!114 &1340057920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7629,9 +7623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 2.5
-  time2: 1
   StageStartCanvas: {fileID: 1492500878}
-  PlayerStartCanvas: {fileID: 0}
 --- !u!114 &1492500881
 MonoBehaviour:
   m_ObjectHideFlags: 0

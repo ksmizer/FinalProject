@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class TurnBasedCombat : MonoBehaviour {
 
-	//private float time = 1;
 	public GameObject EnemyTurnCanvas;
 	public GameObject PlayerTurnCanvas;
 	public GameObject StageClearCanvas;
@@ -43,31 +42,27 @@ public class TurnBasedCombat : MonoBehaviour {
 		}
 		if (Input.GetKeyDown("o")) {
 			currentState = BattleStates.ENEMYTURN;
-
-			EnemyTurnCanvas.SetActive (true);
+			EnemyTurnCanvas.SetActive(true);
 			StartCoroutine(Wait(1.5f, EnemyTurnCanvas));
-			//System.Threading.Thread.Sleep (1000);
-			//EnemyTurnCanvas.SetActive (false);
-
 			shown = false;
 		}
 		if (Input.GetKeyDown("i")) {
 			currentState = BattleStates.LOST;
-
-			currentState = BattleStates.WON;
-			StageClearCanvas.SetActive (true);
+			StageLostCanvas.SetActive(true);
 			StartCoroutine(Wait(4.0f, StageLostCanvas));
-			SceneManager.LoadScene (1);
+			SceneManager.LoadScene(1);
 			shown = false;
 		}
 		if (Input.GetKeyDown("u")) {
 			currentState = BattleStates.WON;
-			StageClearCanvas.SetActive (true);
+			StageClearCanvas.SetActive(true);
 			StartCoroutine(Wait(4.0f, StageClearCanvas));
-			SceneManager.LoadScene (1);
+			SceneManager.LoadScene(1);
 			shown = false;
 		}
-		
+		if (Input.GetKeyDown("h")) {
+			shown = false;
+		}
 		switch(currentState) {
 			case (BattleStates.START):
 				//setup BATTLE STATUS
@@ -91,7 +86,4 @@ public class TurnBasedCombat : MonoBehaviour {
 			shown = true;
 		}
 	}
-
-
 }
-

@@ -4,33 +4,31 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour {
 
-	public enum Level{
-		NONE,
-		FIRST,
-		SECOND,
-		THIRD,
-		FOURTH
-	}
-
-	public GameObject enemy;
-	private Level currentLevel;
+	GameObject[] enemies;
+	GameObject[] heroes;
+	GameObject combat;
+	TurnBasedCombat state;
 	
 	void Start () {
-		currentLevel = Level.NONE;
+		combat = GameObject.Find("Combat");
+		state = combat.GetComponent <TurnBasedCombat> ();
 	}
 	
 	void Update () {
-		switch(currentLevel) {
-			case (Level.NONE):
-				break;
-			case (Level.FIRST):
-				break;
-			case (Level.SECOND):
-				break;
-			case (Level.THIRD):
-				break;
-			case (Level.FOURTH):
-				break;
+		
+	}
+	
+	public void CheckEnemies () {
+		enemies = GameObject.FindGameObjectsWithTag("Enemy");
+		if (enemies.Length < 1) {
+			state.currentState = TurnBasedCombat.BattleStates.WON;
+		}
+	}
+	
+	public void CheckAllies () {
+		heroes = GameObject.FindGameObjectsWithTag("Ally");
+		if (heroes.Length < 1) {
+			state.currentState = TurnBasedCombat.BattleStates.LOST;
 		}
 	}
 }
