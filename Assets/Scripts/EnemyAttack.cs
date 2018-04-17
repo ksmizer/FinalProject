@@ -8,6 +8,8 @@ public class EnemyAttack : MonoBehaviour {
 
 	//[SerializeField]
 	//float moveSpeed = 1f;
+	public Animator anim;
+
 
 	public int expValue = 10;
 	int baseAttack = 10;
@@ -18,7 +20,7 @@ public class EnemyAttack : MonoBehaviour {
 	float timeToShowDamage = 1f;
 	public Text enemyDamageText;
 	
-	Animator anim;
+	//Animator anim;
 	AdellStats playerHealth;
 	EnemyHealth enemyHealth;
 	EnemyMovementBattle movementEnabled;
@@ -44,6 +46,8 @@ public class EnemyAttack : MonoBehaviour {
 		attackDamage =
 					Mathf.RoundToInt((Mathf.Pow((float)baseAttack,(1+0.05f*enemyHealth.currentLevel))
 					+ equipAttack) * effectiveness);
+
+		anim = GetComponent<Animator> ();
 	}
 	
 	void Update () {
@@ -58,6 +62,10 @@ public class EnemyAttack : MonoBehaviour {
 			}
 			if (Input.GetKeyDown("r")) {
 				remainingMovement = maxMovement;
+
+			}
+			if (Input.GetKeyDown ("m")) {
+				anim.Play ("Front_Punch");
 			}
 			if (attacking) {
 				//Attack ();

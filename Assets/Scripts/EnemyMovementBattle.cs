@@ -7,7 +7,7 @@ public class EnemyMovementBattle : MonoBehaviour {
 
 	//Animator animator;
 
-	public Canvas EturnCanvas;
+	//public Canvas EturnCanvas;
 	
 	GameObject[] heroes;
 	GameObject closest;
@@ -39,7 +39,7 @@ public class EnemyMovementBattle : MonoBehaviour {
 	
 	void Update () {
 		if (state.currentState == TurnBasedCombat.BattleStates.ENEMYTURN) {
-			if (!moved && !EturnCanvas.gameObject.activeSelf) {
+			if (!moved /*&& !EturnCanvas.gameObject.activeSelf*/) {
 				inRange = false;
 				Move();
 				moved = true;
@@ -61,7 +61,7 @@ public class EnemyMovementBattle : MonoBehaviour {
 					inRange = false;
 				}
 			}
-			if (!attacked && closest != null && inRange && !EturnCanvas.gameObject.activeSelf) {
+			if (!attacked && closest != null && inRange /*&& !EturnCanvas.gameObject.activeSelf*/) {
 				attack.Attack(closest);
 				attacked = true;
 				StartCoroutine(Check());

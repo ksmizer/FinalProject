@@ -5,7 +5,11 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class AdellStats : MonoBehaviour {
-	
+
+	public Animator anim;
+	public Slider healthbar;
+
+	int maxHealth = 40;
 	int startingHealth = 40;
 	public int currentHealth;
 	
@@ -25,7 +29,7 @@ public class AdellStats : MonoBehaviour {
 	//public AudioClip deathClip;
 	public float flashSpeed = 5f;
 	public Color flashColor = new Color(1f, 0f, 0f, 0.1f);
-	public Text playerDamageText;
+	//public Text playerDamageText;
 	
 	//Animator anim                                                                                                                                                                                                                                                                                                                                                                                                                            ;
 	//AudioSource playerAudio;
@@ -57,6 +61,9 @@ public class AdellStats : MonoBehaviour {
 		defense =
 				Mathf.RoundToInt((Mathf.Pow((float)baseDefense,(1+0.05f*currentLevel))
 				+ equipDefense) * effectiveness);
+
+		healthbar.value = CalculateHealth ();
+		anim = GetComponent<Animator> ();
 	}
 	
 	void Update () {
@@ -70,6 +77,7 @@ public class AdellStats : MonoBehaviour {
 			RecalcAttack ();
 		}
 		if (Input.GetKeyDown("r")) {
+			anim.Play ("Front_Punch");
 		}
 		if (damaged) {
 			
@@ -117,6 +125,10 @@ public class AdellStats : MonoBehaviour {
 		Debug.Log("Player lost " + amount + " HP");
 		damaged = true;
 		currentHealth -= amount;
+
+		//int amount = 3;
+		FloatingTextController.CreateFloatingText (amount.ToString (), transform);
+		healthbar.value = CalculateHealth ();
 		//anim.SetTrigger ("Hurt");
 		//healthSlider.value = currentHealth;
 		//playerAudio.Play ();
@@ -124,7 +136,12 @@ public class AdellStats : MonoBehaviour {
 			Death ();
 		}
 	}
-	
+
+	float CalculateHealth()
+	{
+		return currentHealth;
+	}
+
 	void Death ()
 	{
 		Debug.Log("Character Died.");

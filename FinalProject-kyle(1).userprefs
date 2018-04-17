@@ -1,9 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\StageStartTimer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EnemyAttack.cs">
     <Files>
-      <File FileName="Assets\Scripts\StageStartTimer.cs" Line="9" Column="4" />
-      <File FileName="Assets\Scripts\ClampDmg.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EnemyMovementBattle.cs" Line="64" Column="89" />
+      <File FileName="Assets\Scripts\AdellStats.cs" Line="80" Column="8" />
+      <File FileName="Assets\Scripts\EnemyAttack.cs" Line="23" Column="4" />
+      <File FileName="Assets\Scripts\FloatingTextController.cs" Line="8" Column="35" />
+      <File FileName="Assets\Scripts\FloatingText.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EnemyHealth.cs" Line="81" Column="14" />
+      <File FileName="Assets\Scripts\TurnBasedCombat.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CursorControllerBattle.cs" Line="108" Column="81" />
+      <File FileName="Assets\Scripts\CharMovementBattle.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
