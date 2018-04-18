@@ -25,8 +25,8 @@ public class EnemyManager : MonoBehaviour {
 					counter++;
 				}
 			}
-			if (counter == enemies.Length) {
-				state.currentState = TurnBasedCombat.BattleStates.PLAYERTURN;
+			if (counter >= enemies.Length) {
+				StartCoroutine(SwapStates());
 			}
 		}
 	}
@@ -44,5 +44,10 @@ public class EnemyManager : MonoBehaviour {
 		if (heroes.Length < 1) {
 			state.currentState = TurnBasedCombat.BattleStates.LOST;
 		}
+	}
+	
+	IEnumerator SwapStates () {
+		yield return new WaitForSeconds(1);
+		state.currentState = TurnBasedCombat.BattleStates.PLAYERTURN;
 	}
 }

@@ -104,7 +104,7 @@ public class AdellStats : MonoBehaviour {
 		enemyHealth = enemy.GetComponent <EnemyHealth> ();
 		if (enemyHealth.currentHealth > 0 && !attacked) {
 			enemyHealth.TakeDamage (attack);
-			anim.Play ("Front_Punch");
+			//anim.Play ("Front_Punch");
 			attacked = true;
 			StartCoroutine (Check());
 			if (effectiveness > 1) {

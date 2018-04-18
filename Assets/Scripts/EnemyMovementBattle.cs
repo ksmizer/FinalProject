@@ -63,11 +63,12 @@ public class EnemyMovementBattle : MonoBehaviour {
 				}
 			}
 			if (!attacked && closest != null && inRange /*&& !EturnCanvas.gameObject.activeSelf*/) {
-				attack.Attack(closest);
+				StartCoroutine(AttackWait());
 				attacked = true;
 				StartCoroutine(Check());
 				//manager.CheckAllies();
 			}
+			CheckDone();
 		} else {
 			moved = false;
 			attacked = false;
@@ -105,6 +106,11 @@ public class EnemyMovementBattle : MonoBehaviour {
 		if (moved && !inRange) {
 			done = true;
 		}
+	}
+	
+	IEnumerator AttackWait () {
+		yield return new WaitForSeconds(1);
+		attack.Attack(closest);
 	}
 	
 	public bool GetIfDone () { return done; }

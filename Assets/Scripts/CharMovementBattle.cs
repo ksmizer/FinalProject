@@ -38,12 +38,10 @@ public class CharMovementBattle : MonoBehaviour {
 		}
 		if (Input.GetKeyDown("c") && selected && !stats.GetAttacked()) {
 			MoveBack();
-			moved = false;
 		}
 		if (state.currentState == TurnBasedCombat.BattleStates.ENEMYTURN) {
 			moved = false;
 		}
-
 	}
 	
 	void Move()	{
@@ -58,10 +56,15 @@ public class CharMovementBattle : MonoBehaviour {
 		//Debug.Log("Return pressed.");
 		transform.position = cursorController.GetPrevPos ();
 		agent.destination = transform.position;
-		
+		selected = false;
+		moved = false;
 	}
 	
 	public void SetSelected(bool test) { selected = test;}
+	
+	public bool GetMoved() { return moved; }
+	
+	public void SetMoved(bool move) { moved = move; }
 
 }
 
