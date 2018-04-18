@@ -31,7 +31,6 @@ public class AdellStats : MonoBehaviour {
 	public Color flashColor = new Color(1f, 0f, 0f, 0.1f);
 	//public Text playerDamageText;
 	
-	//Animator anim                                                                                                                                                                                                                                                                                                                                                                                                                            ;
 	//AudioSource playerAudio;
 	//CharMovementBattle playerMovement;
 	//GameObject enemy;
@@ -39,12 +38,13 @@ public class AdellStats : MonoBehaviour {
 	CharMovementBattle movementEnabled;
 	EnemyHealth enemyHealth;
 	TurnBasedCombat state;
+	EnemyManager manager;
 	
 	int attack;
 	int defense;
 	bool isDead;
 	bool damaged;
-	bool attacking;
+	bool attacked;
 	float timer;
 	
 	void Start () {
@@ -55,6 +55,7 @@ public class AdellStats : MonoBehaviour {
 		currentHealth = startingHealth;
 		combat = GameObject.Find("Combat");
 		state = combat.GetComponent <TurnBasedCombat> ();
+		manager = combat.GetComponent <EnemyManager> ();
 		attack =
 				Mathf.RoundToInt((Mathf.Pow((float)baseAttack,(1+0.05f*currentLevel))
 				+ equipAttack) * effectiveness);
@@ -68,21 +69,11 @@ public class AdellStats : MonoBehaviour {
 	
 	void Update () {
 		timer += Time.deltaTime;
-		if (Input.GetKeyDown("f")) {
-			attacking = true;
-		}
-		if (Input.GetKeyDown("g")) {
-			attacking = true;
-			effectiveness = 2;
-			RecalcAttack ();
-		}
 		if (Input.GetKeyDown("r")) {
 			//anim.Play ("Front_Punch");
 		}
 		if (damaged) {
 			
-		} else if (attacking) {
-			//Attack ();
 		} else if (isDead) {
 			//damageImage.color = flashColor;
 			Destroy (gameObject, 1f);
@@ -95,6 +86,9 @@ public class AdellStats : MonoBehaviour {
 			//playerDamageText.text = "";
 		}
 		damaged = false;
+		if (state.currentState == TurnBasedCombat.BattleStates.ENEMYTURN) {
+			attacked = false;
+		}
 	}
 
 	void RecalcAttack ()
@@ -108,14 +102,16 @@ public class AdellStats : MonoBehaviour {
 	{
 		//RecalcAttack ();
 		enemyHealth = enemy.GetComponent <EnemyHealth> ();
-		if (enemyHealth.currentHealth > 0) {
+		if (enemyHealth.currentHealth > 0 && !attacked) {
 			enemyHealth.TakeDamage (attack);
+			anim.Play ("Front_Punch");
+			attacked = true;
+			StartCoroutine (Check());
 			if (effectiveness > 1) {
 			Debug.Log("It was Super Effective!!");
 			}
 		}
 		timer = 0f;
-		attacking = false;
 		effectiveness = 1;
 	}
 	
@@ -152,6 +148,13 @@ public class AdellStats : MonoBehaviour {
 		//state.currentState = TurnBasedCombat.BattleStates.LOST;
 	}
 	
+	IEnumerator Check () {
+		yield return new WaitForSeconds(1.5f);
+		manager.CheckEnemies();
+	}
+	
 	public float GetMaxMovement () { return maxMovement; }
+	
+	public bool GetAttacked () { return attacked; }
 }
 

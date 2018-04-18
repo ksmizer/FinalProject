@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StageStartTimer : MonoBehaviour {
+public class StageStartTimerOld : MonoBehaviour {
 
 	public float time = 2;
 	public GameObject StageStartCanvas;

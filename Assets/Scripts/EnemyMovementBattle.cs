@@ -25,6 +25,7 @@ public class EnemyMovementBattle : MonoBehaviour {
 	bool initialized; bool moved;
 	bool attacked; bool inRange;
 	bool active; bool found;
+	bool done;
 	
 	void Start () {
 		combat = GameObject.Find("Combat");
@@ -70,6 +71,7 @@ public class EnemyMovementBattle : MonoBehaviour {
 		} else {
 			moved = false;
 			attacked = false;
+			done = false;
 		}
 	}
 	
@@ -95,5 +97,16 @@ public class EnemyMovementBattle : MonoBehaviour {
 			agent.destination = closest.transform.position;
 		}
 	}
+	
+	void CheckDone () {
+		if (attacked) {
+			done = true;
+		}
+		if (moved && !inRange) {
+			done = true;
+		}
+	}
+	
+	public bool GetIfDone () { return done; }
 }
 
