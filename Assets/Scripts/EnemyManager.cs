@@ -8,25 +8,38 @@ public class EnemyManager : MonoBehaviour {
 	GameObject[] heroes;
 	GameObject combat;
 	TurnBasedCombat state;
-	EnemyMovementBattle checker;
+	EnemyMovementBattle enemyChecker;
+	AdellStats heroChecker;
 	
 	void Start () {
 		combat = GameObject.Find("Combat");
 		state = combat.GetComponent <TurnBasedCombat> ();
 		enemies = GameObject.FindGameObjectsWithTag("Enemy");
+		heroes = GameObject.FindGameObjectsWithTag("Ally");
 	}
 	
 	void Update () {
 		if (state.currentState == TurnBasedCombat.BattleStates.ENEMYTURN) {
 			int counter = 0;
 			foreach (GameObject enemy in enemies) {
-				checker = enemy.GetComponent <EnemyMovementBattle> ();
-				if (checker.GetIfDone()) {
+				enemyChecker = enemy.GetComponent <EnemyMovementBattle> ();
+				if (enemyChecker.GetIfDone()) {
 					counter++;
 				}
 			}
 			if (counter >= enemies.Length) {
-				StartCoroutine(SwapStates());
+				StartCoroutine(SwapStates(0));
+			}
+		} else if (state.currentState == TurnBasedCombat.BattleStates.PLAYERTURN) {
+			int counter = 0;
+			foreach (GameObject hero in heroes) {
+				heroChecker = hero.GetComponent <AdellStats> ();
+				if (heroChecker.GetIfDone()) {
+					counter++;
+				}
+			}
+			if (counter >= heroes.Length) {
+				StartCoroutine(SwapStates(1));
 			}
 		}
 	}
@@ -46,8 +59,12 @@ public class EnemyManager : MonoBehaviour {
 		}
 	}
 	
-	IEnumerator SwapStates () {
+	IEnumerator SwapStates (int swap) {
 		yield return new WaitForSeconds(1);
-		state.currentState = TurnBasedCombat.BattleStates.PLAYERTURN;
+		if (swap == 0) {
+			state.currentState = TurnBasedCombat.BattleStates.PLAYERTURN;
+		} else if (swap == 1) {
+			state.currentState = TurnBasedCombat.BattleStates.ENEMYTURN;
+		}
 	}
 }

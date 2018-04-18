@@ -50,6 +50,7 @@ public class CharMovementBattle : MonoBehaviour {
 			cursorController.SetPrevPos (transform.position);
 			agent.destination = cursor.transform.position;
 		}
+		stats.ClosestEnemy();
 	}
 	
 	void MoveBack()	{

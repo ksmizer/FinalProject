@@ -35,7 +35,9 @@ public class AdellStats : MonoBehaviour {
 	//CharMovementBattle playerMovement;
 	//GameObject enemy;
 	GameObject combat;
-	CharMovementBattle movementEnabled;
+	GameObject closest;
+	GameObject[] enemies;
+	CharMovementBattle movement;
 	EnemyHealth enemyHealth;
 	TurnBasedCombat state;
 	EnemyManager manager;
@@ -45,7 +47,11 @@ public class AdellStats : MonoBehaviour {
 	bool isDead;
 	bool damaged;
 	bool attacked;
+	bool done = false;
+	bool inRange = true;
 	float timer;
+	float attackRadius1 = 1f;
+	float attackRadius2 = 2f;
 	
 	void Start () {
 		//anim = GetComponent <Animator> ();
@@ -56,6 +62,7 @@ public class AdellStats : MonoBehaviour {
 		combat = GameObject.Find("Combat");
 		state = combat.GetComponent <TurnBasedCombat> ();
 		manager = combat.GetComponent <EnemyManager> ();
+		movement = GetComponent <CharMovementBattle> ();
 		attack =
 				Mathf.RoundToInt((Mathf.Pow((float)baseAttack,(1+0.05f*currentLevel))
 				+ equipAttack) * effectiveness);
@@ -88,6 +95,9 @@ public class AdellStats : MonoBehaviour {
 		damaged = false;
 		if (state.currentState == TurnBasedCombat.BattleStates.ENEMYTURN) {
 			attacked = false;
+			done = false;
+		} else {
+			CheckDone();
 		}
 	}
 
@@ -153,8 +163,48 @@ public class AdellStats : MonoBehaviour {
 		manager.CheckEnemies();
 	}
 	
+	public void CheckDone () {
+		if (movement.GetMoved() && !inRange || attacked) {
+			done = true;
+		}
+		/*
+		if (EndPlayerTurn) {
+			done = true;
+		}
+		*/
+	}
+	
+	public void ClosestEnemy () {
+		enemies = GameObject.FindGameObjectsWithTag("Enemy");
+		closest = null;
+		float distance = Mathf.Infinity;
+		foreach (GameObject enemy in enemies) {
+			Vector3 diff = enemy.transform.position - transform.position;
+			float curDistance = diff.sqrMagnitude;
+			if (curDistance < distance) {
+				closest = enemy;
+				distance = curDistance;
+			}
+		}
+		CheckInRange();
+	}
+	
+	void CheckInRange () {
+		if (closest != null) {
+			Vector3 diff = closest.transform.position - transform.position;
+			float atkDistance = diff.sqrMagnitude;
+			if (atkDistance <= attackRadius1 * 3f) {
+				inRange = true;
+			} else {
+				inRange = false;
+			}
+		}
+	}
+	
 	public float GetMaxMovement () { return maxMovement; }
 	
 	public bool GetAttacked () { return attacked; }
+	
+	public bool GetIfDone () { return done; }
 }
 
