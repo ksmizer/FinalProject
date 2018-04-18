@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CursorControllerBattle : MonoBehaviour {
 
+	public Animator anim;
 	//Animator animator;
 	public GameObject moveButton;
 	public GameObject attackButton;
@@ -104,8 +105,10 @@ public class CursorControllerBattle : MonoBehaviour {
 					if (atkFocus && attackOption) {
 						allyStats = charSelected.GetComponent <AdellStats> ();
 						allyStats.Attack(charFocus);
-						int amount = 3;
-						FloatingTextController.CreateFloatingText (amount.ToString (), transform);
+						Debug.Log ("im here");
+						anim.Play ("Front_Punch");
+						//int amount = 6;
+						//FloatingTextController.CreateFloatingText (amount.ToString (), transform);
 						attackOption = false;
 						atkFocus = false;
 						charFocus = null;

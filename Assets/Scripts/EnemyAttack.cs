@@ -87,6 +87,7 @@ public class EnemyAttack : MonoBehaviour {
 	{
 		playerHealth = player.GetComponent <AdellStats> ();
 		attackDamage = (baseAttack + equipAttack) * effectiveness;
+		Debug.Log ("Attack dmg: " + attackDamage);
 		if (playerHealth.currentHealth > 0) {
 			playerHealth.TakeDamage (attackDamage);
 			StartCoroutine (Check ());

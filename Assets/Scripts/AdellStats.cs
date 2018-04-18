@@ -16,7 +16,7 @@ public class AdellStats : MonoBehaviour {
 	[SerializeField]
 	public int currentLevel;
 	
-	int baseAttack = 7;
+	int baseAttack = 8;
 	int baseDefense = 3;
 	int equipAttack = 2;
 	int equipDefense = 3;
@@ -46,6 +46,7 @@ public class AdellStats : MonoBehaviour {
 	bool damaged;
 	bool attacking;
 	float timer;
+	bool attackFlag;
 	
 	void Start () {
 		//anim = GetComponent <Animator> ();
@@ -77,7 +78,8 @@ public class AdellStats : MonoBehaviour {
 			RecalcAttack ();
 		}
 		if (Input.GetKeyDown("r")) {
-			//anim.Play ("Front_Punch");
+				anim.Play ("Front_Punch");
+				//anim.Play ("battle_idle_adell_front_left");
 		}
 		if (damaged) {
 			
@@ -107,9 +109,14 @@ public class AdellStats : MonoBehaviour {
 	public void Attack (GameObject enemy)
 	{
 		//RecalcAttack ();
+		anim.Play ("Front_Punch");
 		enemyHealth = enemy.GetComponent <EnemyHealth> ();
 		if (enemyHealth.currentHealth > 0) {
+			attack = baseAttack;
+			Debug.Log ("attack dmg being sent " + attack);
+			//attack = baseAttack;
 			enemyHealth.TakeDamage (attack);
+			anim.Play ("Front_Punch");
 			if (effectiveness > 1) {
 			Debug.Log("It was Super Effective!!");
 			}
