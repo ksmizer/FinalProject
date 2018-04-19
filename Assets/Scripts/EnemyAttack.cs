@@ -33,6 +33,7 @@ public class EnemyAttack : MonoBehaviour {
 	bool isDead = false;
 	bool damaged = false;
 	bool attacking = false;
+	bool canAttack = true;
 	float timer;
 	
 	void Start () {
@@ -56,10 +57,10 @@ public class EnemyAttack : MonoBehaviour {
 		if (state.currentState == TurnBasedCombat.BattleStates.ENEMYTURN) {
 			timer += Time.deltaTime;
 			if (Input.GetKeyDown("j")) {
-				attacking = true;
+				//attacking = true;
 			}
 			if (Input.GetKeyDown("h")) {
-				attacking = true;
+				//attacking = true;
 				effectiveness = 2;
 			}
 			if (Input.GetKeyDown("r")) {
@@ -87,7 +88,6 @@ public class EnemyAttack : MonoBehaviour {
 	{
 		playerHealth = player.GetComponent <AdellStats> ();
 		attackDamage = (baseAttack + equipAttack) * effectiveness;
-		Debug.Log ("Attack dmg: " + attackDamage);
 		if (playerHealth.currentHealth > 0) {
 			playerHealth.TakeDamage (attackDamage);
 			StartCoroutine (Check ());
@@ -96,7 +96,7 @@ public class EnemyAttack : MonoBehaviour {
 			}
 		}
 		timer = 0f;
-		attacking = false;
+		//attacking = false;
 		effectiveness = 1;
 	}
 

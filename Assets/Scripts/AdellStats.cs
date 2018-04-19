@@ -16,7 +16,7 @@ public class AdellStats : MonoBehaviour {
 	[SerializeField]
 	public int currentLevel;
 	
-	int baseAttack = 8;
+	int baseAttack = 7;
 	int baseDefense = 3;
 	int equipAttack = 2;
 	int equipDefense = 3;
@@ -31,22 +31,27 @@ public class AdellStats : MonoBehaviour {
 	public Color flashColor = new Color(1f, 0f, 0f, 0.1f);
 	//public Text playerDamageText;
 	
-	//Animator anim                                                                                                                                                                                                                                                                                                                                                                                                                            ;
 	//AudioSource playerAudio;
 	//CharMovementBattle playerMovement;
 	//GameObject enemy;
 	GameObject combat;
-	CharMovementBattle movementEnabled;
+	GameObject closest;
+	GameObject[] enemies;
+	CharMovementBattle movement;
 	EnemyHealth enemyHealth;
 	TurnBasedCombat state;
+	EnemyManager manager;
 	
 	int attack;
 	int defense;
 	bool isDead;
 	bool damaged;
-	bool attacking;
+	bool attacked;
+	bool done = false;
+	bool inRange = true;
 	float timer;
-	bool attackFlag;
+	float attackRadius1 = 1f;
+	float attackRadius2 = 2f;
 	
 	void Start () {
 		//anim = GetComponent <Animator> ();
@@ -56,6 +61,8 @@ public class AdellStats : MonoBehaviour {
 		currentHealth = startingHealth;
 		combat = GameObject.Find("Combat");
 		state = combat.GetComponent <TurnBasedCombat> ();
+		manager = combat.GetComponent <EnemyManager> ();
+		movement = GetComponent <CharMovementBattle> ();
 		attack =
 				Mathf.RoundToInt((Mathf.Pow((float)baseAttack,(1+0.05f*currentLevel))
 				+ equipAttack) * effectiveness);
@@ -69,22 +76,12 @@ public class AdellStats : MonoBehaviour {
 	
 	void Update () {
 		timer += Time.deltaTime;
-		if (Input.GetKeyDown("f")) {
-			attacking = true;
-		}
-		if (Input.GetKeyDown("g")) {
-			attacking = true;
-			effectiveness = 2;
-			RecalcAttack ();
-		}
+
 		if (Input.GetKeyDown("r")) {
-				anim.Play ("Front_Punch");
-				//anim.Play ("battle_idle_adell_front_left");
+			anim.Play ("Front_Punch");
 		}
 		if (damaged) {
 			
-		} else if (attacking) {
-			//Attack ();
 		} else if (isDead) {
 			//damageImage.color = flashColor;
 			Destroy (gameObject, 1f);
@@ -97,6 +94,12 @@ public class AdellStats : MonoBehaviour {
 			//playerDamageText.text = "";
 		}
 		damaged = false;
+		if (state.currentState == TurnBasedCombat.BattleStates.ENEMYTURN) {
+			attacked = false;
+			done = false;
+		} else {
+			CheckDone();
+		}
 	}
 
 	void RecalcAttack ()
@@ -109,20 +112,17 @@ public class AdellStats : MonoBehaviour {
 	public void Attack (GameObject enemy)
 	{
 		//RecalcAttack ();
-		anim.Play ("Front_Punch");
 		enemyHealth = enemy.GetComponent <EnemyHealth> ();
-		if (enemyHealth.currentHealth > 0) {
-			attack = baseAttack;
-			Debug.Log ("attack dmg being sent " + attack);
-			//attack = baseAttack;
+		if (enemyHealth.currentHealth > 0 && !attacked) {
 			enemyHealth.TakeDamage (attack);
-			anim.Play ("Front_Punch");
+			//anim.Play ("Front_Punch");
+			attacked = true;
+			StartCoroutine (Check());
 			if (effectiveness > 1) {
 			Debug.Log("It was Super Effective!!");
 			}
 		}
 		timer = 0f;
-		attacking = false;
 		effectiveness = 1;
 	}
 	
@@ -159,6 +159,53 @@ public class AdellStats : MonoBehaviour {
 		//state.currentState = TurnBasedCombat.BattleStates.LOST;
 	}
 	
+	IEnumerator Check () {
+		yield return new WaitForSeconds(1.5f);
+		manager.CheckEnemies();
+	}
+	
+	public void CheckDone () {
+		if (movement.GetMoved() && !inRange || attacked) {
+			done = true;
+		}
+		/*
+		if (EndPlayerTurn) {
+			done = true;
+		}
+		*/
+	}
+	
+	public void ClosestEnemy () {
+		enemies = GameObject.FindGameObjectsWithTag("Enemy");
+		closest = null;
+		float distance = Mathf.Infinity;
+		foreach (GameObject enemy in enemies) {
+			Vector3 diff = enemy.transform.position - transform.position;
+			float curDistance = diff.sqrMagnitude;
+			if (curDistance < distance) {
+				closest = enemy;
+				distance = curDistance;
+			}
+		}
+		CheckInRange();
+	}
+	
+	void CheckInRange () {
+		if (closest != null) {
+			Vector3 diff = closest.transform.position - transform.position;
+			float atkDistance = diff.sqrMagnitude;
+			if (atkDistance <= attackRadius1 * 3f) {
+				inRange = true;
+			} else {
+				inRange = false;
+			}
+		}
+	}
+	
 	public float GetMaxMovement () { return maxMovement; }
+	
+	public bool GetAttacked () { return attacked; }
+	
+	public bool GetIfDone () { return done; }
 }
 

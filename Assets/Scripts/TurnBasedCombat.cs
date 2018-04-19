@@ -12,6 +12,8 @@ public class TurnBasedCombat : MonoBehaviour {
 	public GameObject StageLostCanvas;
 
 	bool shown = false;
+	bool start = true;
+	bool reached = false;
 
 	public enum BattleStates{
 		START,
@@ -31,6 +33,20 @@ public class TurnBasedCombat : MonoBehaviour {
 	{
 		yield return new WaitForSeconds (delay);
 		canvas.SetActive (false);
+	}
+	
+	IEnumerator StartToPlayer(float delay)
+	{
+		yield return new WaitForSeconds (delay);
+		currentState = BattleStates.PLAYERTURN;
+		shown = false;
+	}
+	
+	IEnumerator Exit(float delay, GameObject canvas)
+	{
+		yield return new WaitForSeconds (delay);
+		canvas.SetActive (false);
+		SceneManager.LoadScene(1);
 	}
 
 	void Update () {
@@ -66,19 +82,35 @@ public class TurnBasedCombat : MonoBehaviour {
 		switch(currentState) {
 			case (BattleStates.START):
 				//setup BATTLE STATUS
-				currentState = BattleStates.PLAYERTURN;
+				if (reached == false) {
+					StartCoroutine (StartToPlayer (2f));
+					reached = true;
+				}
 				break;
 			
 			case (BattleStates.PLAYERTURN):
+				if (!shown) {
+					PlayerTurnCanvas.SetActive (true);
+					StartCoroutine (Wait (1.5f, PlayerTurnCanvas));
+					shown = true;
+				}
 				break;
 				
 			case (BattleStates.ENEMYTURN):
+				EnemyTurnCanvas.SetActive(true);
+				StartCoroutine(Wait(1.5f, EnemyTurnCanvas));
 				break;
 				
 			case (BattleStates.LOST):
+				StageLostCanvas.SetActive(true);
+				StartCoroutine(Exit(4.0f, StageLostCanvas));
+				//SceneManager.LoadScene(1);
 				break;
 				
 			case (BattleStates.WON):
+				StageClearCanvas.SetActive(true);
+				StartCoroutine(Exit(4.0f, StageClearCanvas));
+				//SceneManager.LoadScene(1);
 				break;
 		}
 		if (!shown) {

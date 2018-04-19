@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class CursorControllerBattle : MonoBehaviour {
 
-	public Animator anim;
 	//Animator animator;
 	public GameObject moveButton;
 	public GameObject attackButton;
@@ -89,7 +88,7 @@ public class CursorControllerBattle : MonoBehaviour {
 						menuSelected = false;
 						charSelected = null;
 						moveOption = false;
-						moved = true;
+						//moved = true;
 						ClearPoints ();
 					}
 					//select character that is focused on & bring up menu
@@ -105,23 +104,25 @@ public class CursorControllerBattle : MonoBehaviour {
 					if (atkFocus && attackOption) {
 						allyStats = charSelected.GetComponent <AdellStats> ();
 						allyStats.Attack(charFocus);
-						Debug.Log ("im here");
-						anim.Play ("Front_Punch");
-						//int amount = 6;
-						//FloatingTextController.CreateFloatingText (amount.ToString (), transform);
+						int amount = 3;
+						FloatingTextController.CreateFloatingText (amount.ToString (), transform);
 						attackOption = false;
 						atkFocus = false;
 						charFocus = null;
 						charSelected = null;
 						menuSelected = false;
-						attacked = true;
+						//attacked = true;
 						ClearPoints ();
 						StartCoroutine(Check());
 					}
 				}
 				//used for initializing line renderer to show radius around
 				//character for movement & attack
-				if (menuSelected) {	
+				if (menuSelected) {
+					movement = charSelected.GetComponent <CharMovementBattle> ();
+					allyStats = charSelected.GetComponent <AdellStats> ();
+					attacked = allyStats.GetAttacked();
+					moved = movement.GetMoved();
 					if (moveOption) {
 						if (!initialized)
 							InitRadius ();
@@ -148,9 +149,11 @@ public class CursorControllerBattle : MonoBehaviour {
 					}
 				}
 				//cancel selection
-				if (Input.GetKeyDown("c")) {
+				if (Input.GetKeyDown("c") || Input.GetKeyDown("escape")) {
 					if (moveCanvas.gameObject.activeSelf) {
 						moveCanvas.gameObject.SetActive(false);
+						charSelected = null;
+						menuSelected = false;
 					} else if (menuSelected && moved && !attackOption) {
 						movement = charSelected.GetComponent <CharMovementBattle> ();
 						movement.SetSelected(false);
@@ -159,6 +162,7 @@ public class CursorControllerBattle : MonoBehaviour {
 						transform.position = charSelected.transform.position;
 						moveCanvas.gameObject.SetActive(true);
 						ClearPoints ();
+						movement.SetMoved(false);
 					} else if (menuSelected && attackOption && !attacked) {
 						atkSelected = false;
 						attackOption = false;
@@ -194,8 +198,8 @@ public class CursorControllerBattle : MonoBehaviour {
 			}
 		//reset character movement and attack options
 		} else if (state.currentState == TurnBasedCombat.BattleStates.ENEMYTURN) {
-			moved = false;
-			attacked = false;
+			//moved = false;
+			//attacked = false;
 		}
 	}
 
@@ -204,18 +208,27 @@ public class CursorControllerBattle : MonoBehaviour {
 		//animationFlag = true;
 		//if (animationFlag)
 		//	animationFight.Play(
-		attackOption = true;
-		attack1 = charSelected.gameObject.GetComponentInChildren <SphereCollider> ();
-		moveCanvas.gameObject.SetActive(false);
-		movement = charSelected.GetComponent <CharMovementBattle> ();
-		movement.SetSelected(false);
+		
+		allyStats = charSelected.GetComponent <AdellStats> ();
+		attacked = allyStats.GetAttacked();
+		if (!attacked) {
+			attackOption = true;
+			attack1 = charSelected.gameObject.GetComponentInChildren <SphereCollider> ();
+			moveCanvas.gameObject.SetActive(false);
+			movement = charSelected.GetComponent <CharMovementBattle> ();
+			movement.SetSelected(false);
+		}
 	}
 
 	void MoveButtonChosen() 
 	{
 		//moveButtonFlag = true;
-		moveOption = true;
-		moveCanvasHere.gameObject.SetActive(false);
+		movement = charSelected.GetComponent <CharMovementBattle> ();
+		moved = movement.GetMoved();
+		if (!moved) {
+			moveOption = true;
+			moveCanvasHere.gameObject.SetActive(false);
+		}
 	}
 
 	void Move()
@@ -291,6 +304,7 @@ public class CursorControllerBattle : MonoBehaviour {
 		for (int i = 0; i < (segments+1); i++) {
 			line.SetPosition (i, new Vector3(0,0,0));
 		}
+		initialized = false;
 	}
 	
 	IEnumerator Check () {

@@ -10,11 +10,14 @@ public class CharMovementBattle : MonoBehaviour {
 
 	//Animator anim;
 	GameObject cursor;
+	GameObject combat;
+	TurnBasedCombat state;
 	CursorControllerBattle cursorController;
 	UnityEngine.AI.NavMeshAgent agent;
-	//AdellStats currentStats;
+	AdellStats stats;
 	
 	bool selected;
+	bool moved = false;
 	
 	void Start () {
 		cursor = GameObject.Find("Cursor");
@@ -22,16 +25,26 @@ public class CharMovementBattle : MonoBehaviour {
 		agent = GetComponent <UnityEngine.AI.NavMeshAgent> ();
 		selected = false;
 		//anim = GetComponent <Animator> ();
-		//currentStats = GetComponent <AdellStats> ();
+		stats = GetComponent <AdellStats> ();
+		combat = GameObject.Find("Combat");
+		state = combat.GetComponent <TurnBasedCombat> ();
 	}
 	
 	void Update () {
-		if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown("enter")) && selected) {
+		if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown("enter")) && selected && !moved) {
 			Move();
 			selected = false;
+			moved = true;
 		}
-		if (Input.GetKeyDown("c") && selected) {
+		if (Input.GetKeyDown("c") && selected && !stats.GetAttacked()) {
 			MoveBack();
+		}
+		if (state.currentState == TurnBasedCombat.BattleStates.ENEMYTURN) {
+			moved = false;
+		} else if (state.currentState == TurnBasedCombat.BattleStates.PLAYERTURN) {
+			if (moved && agent.destination == transform.position) {
+				stats.ClosestEnemy ();
+			}
 		}
 	}
 	
@@ -47,10 +60,15 @@ public class CharMovementBattle : MonoBehaviour {
 		//Debug.Log("Return pressed.");
 		transform.position = cursorController.GetPrevPos ();
 		agent.destination = transform.position;
-		
+		selected = false;
+		moved = false;
 	}
 	
 	public void SetSelected(bool test) { selected = test;}
+	
+	public bool GetMoved() { return moved; }
+	
+	public void SetMoved(bool move) { moved = move; }
 
 }
 
